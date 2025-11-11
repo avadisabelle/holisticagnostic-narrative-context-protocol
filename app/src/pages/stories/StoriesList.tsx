@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useStoryStore } from '../../lib/store/storyStore';
+import { LoadingSpinner, ErrorMessage } from '../../components/ui';
 import { Book, User, Calendar } from 'lucide-react';
 
 export function StoriesList() {
@@ -14,8 +15,8 @@ export function StoriesList() {
     return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading stories...</p>
+          <LoadingSpinner />
+          <p className="text-gray-600 mt-4">Loading stories...</p>
         </div>
       </div>
     );
@@ -23,10 +24,11 @@ export function StoriesList() {
 
   if (error) {
     return (
-      <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-        <h2 className="text-xl font-semibold text-red-800 mb-2">Error Loading Stories</h2>
-        <p className="text-red-600">{error.message}</p>
-      </div>
+      <ErrorMessage
+        title="Error Loading Stories"
+        message={error.message}
+        details={error.details ? JSON.stringify(error.details, null, 2) : undefined}
+      />
     );
   }
 

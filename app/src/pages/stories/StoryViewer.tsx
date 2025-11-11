@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useStoryStore } from '../../lib/store/storyStore';
+import { LoadingSpinner, ErrorMessage } from '../../components/ui';
 import { ArrowLeft, Book, Users, Map, Sparkles, Layers } from 'lucide-react';
 import type { Narrative } from '../../types/story';
 
@@ -21,8 +22,8 @@ export function StoryViewer() {
     return (
       <div className="flex items-center justify-center min-h-96">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading story...</p>
+          <LoadingSpinner />
+          <p className="text-gray-600 mt-4">Loading story...</p>
         </div>
       </div>
     );
@@ -35,10 +36,11 @@ export function StoryViewer() {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to stories
         </Link>
-        <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-          <h2 className="text-xl font-semibold text-red-800 mb-2">Story Not Found</h2>
-          <p className="text-red-600">{error?.message || 'The requested story could not be loaded.'}</p>
-        </div>
+        <ErrorMessage
+          title="Story Not Found"
+          message={error?.message || 'The requested story could not be loaded.'}
+          details={error?.details ? JSON.stringify(error.details, null, 2) : undefined}
+        />
       </div>
     );
   }
