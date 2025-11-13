@@ -1,5 +1,5 @@
 import { Link, Routes, Route } from 'react-router-dom';
-import { Book, Users, Zap, TrendingUp, Layers } from 'lucide-react';
+import { Book, Users, Zap, TrendingUp, Layers, ArrowRight } from 'lucide-react';
 
 function TerminologyHome() {
   return (
@@ -105,7 +105,7 @@ function PerspectivesPage() {
       </p>
 
       <div className="space-y-6">
-        <div className="bg-white border-l-4 border-blue-500 p-6 rounded-r-lg">
+        <div className="bg-white border-l-4 border-blue-500 p-6 rounded-r-lg shadow-sm">
           <h3 className="text-2xl font-semibold mb-2">Objective Story Throughline</h3>
           <p className="text-gray-700 mb-2">
             The central conflict of the story - what "they" experience collectively.
@@ -113,7 +113,7 @@ function PerspectivesPage() {
           <p className="text-sm text-blue-600 font-medium">POV: They</p>
         </div>
 
-        <div className="bg-white border-l-4 border-purple-500 p-6 rounded-r-lg">
+        <div className="bg-white border-l-4 border-purple-500 p-6 rounded-r-lg shadow-sm">
           <h3 className="text-2xl font-semibold mb-2">Main Character Throughline</h3>
           <p className="text-gray-700 mb-2">
             The personal baggage of the Main Character - what "I" experience.
@@ -121,7 +121,7 @@ function PerspectivesPage() {
           <p className="text-sm text-purple-600 font-medium">POV: I</p>
         </div>
 
-        <div className="bg-white border-l-4 border-indigo-500 p-6 rounded-r-lg">
+        <div className="bg-white border-l-4 border-indigo-500 p-6 rounded-r-lg shadow-sm">
           <h3 className="text-2xl font-semibold mb-2">Influence Character Throughline</h3>
           <p className="text-gray-700 mb-2">
             The alternate approach that catalyzes growth - what "you" challenge me with.
@@ -129,7 +129,7 @@ function PerspectivesPage() {
           <p className="text-sm text-indigo-600 font-medium">POV: You</p>
         </div>
 
-        <div className="bg-white border-l-4 border-green-500 p-6 rounded-r-lg">
+        <div className="bg-white border-l-4 border-green-500 p-6 rounded-r-lg shadow-sm">
           <h3 className="text-2xl font-semibold mb-2">Relationship Story Throughline</h3>
           <p className="text-gray-700 mb-2">
             The growth of a key relationship - what "we" experience together.
@@ -138,16 +138,334 @@ function PerspectivesPage() {
         </div>
       </div>
 
-      <div className="mt-8 bg-blue-50 p-6 rounded-lg">
+      <div className="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-100">
         <h3 className="font-semibold text-lg mb-2">See It In Action</h3>
         <p className="text-gray-700 mb-4">
           Explore how perspectives work in real stories:
         </p>
         <Link
           to="/stories/the-shawshank-redemption"
-          className="text-blue-600 hover:underline font-medium"
+          className="inline-flex items-center text-blue-600 hover:underline font-medium"
         >
-          The Shawshank Redemption →
+          The Shawshank Redemption <ArrowRight className="w-4 h-4 ml-1" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function NarrativeFunctionsPage() {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <Link to="/docs" className="text-blue-600 hover:underline mb-6 inline-block">
+        ← Back to terminology
+      </Link>
+      <h1 className="text-4xl font-bold mb-4">Narrative Functions</h1>
+      <p className="text-xl text-gray-600 mb-8">
+        The engines of conflict - processes that shape the story's meaning and drive narrative progression
+      </p>
+
+      <div className="bg-purple-50 border border-purple-100 rounded-lg p-6 mb-8">
+        <p className="text-gray-700">
+          Narrative Functions are the fundamental building blocks of narrative structure. Each function
+          represents a specific process or quality that shapes meaning in your story. They can be elements,
+          variations, types, or classes that work together to create thematic coherence.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h2 className="text-2xl font-bold mb-4">Sample Narrative Functions</h2>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+          <div className="flex items-start justify-between mb-3">
+            <h3 className="text-xl font-semibold text-gray-900">Ability</h3>
+            <span className="text-xs font-medium px-2 py-1 bg-purple-100 text-purple-700 rounded">element</span>
+          </div>
+          <p className="text-gray-700 mb-2">Being suited to handle a task; the innate capacity to do or be</p>
+          <p className="text-sm text-gray-500 italic">
+            Synonyms: innate capacity, capability, talent for, inherent proficiency
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+          <div className="flex items-start justify-between mb-3">
+            <h3 className="text-xl font-semibold text-gray-900">Acceptance</h3>
+            <span className="text-xs font-medium px-2 py-1 bg-purple-100 text-purple-700 rounded">element</span>
+          </div>
+          <p className="text-gray-700 mb-2">A decision to allow</p>
+          <p className="text-sm text-gray-500 italic">
+            Synonyms: acquiescence, tolerance, allowance for, consent, submission
+          </p>
+        </div>
+
+        <div className="bg-white border border-gray-200 rounded-lg p-5 shadow-sm">
+          <div className="flex items-start justify-between mb-3">
+            <h3 className="text-xl font-semibold text-gray-900">Knowledge</h3>
+            <span className="text-xs font-medium px-2 py-1 bg-purple-100 text-purple-700 rounded">element</span>
+          </div>
+          <p className="text-gray-700 mb-2">Information that has been learned or discovered</p>
+          <p className="text-sm text-gray-500 italic">
+            Functions drive the processes of conflict and meaning-making in narrative
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-8 bg-purple-50 p-6 rounded-lg border border-purple-100">
+        <h3 className="font-semibold text-lg mb-2">Explore in Stories</h3>
+        <p className="text-gray-700 mb-4">
+          See how narrative functions shape story meaning:
+        </p>
+        <Link
+          to="/stories"
+          className="inline-flex items-center text-purple-600 hover:underline font-medium"
+        >
+          Browse Story Library <ArrowRight className="w-4 h-4 ml-1" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function DynamicsPage() {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <Link to="/docs" className="text-blue-600 hover:underline mb-6 inline-block">
+        ← Back to terminology
+      </Link>
+      <h1 className="text-4xl font-bold mb-4">Dynamics</h1>
+      <p className="text-xl text-gray-600 mb-8">
+        The forces that drive character growth, plot progression, and narrative resolution
+      </p>
+
+      <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-6 mb-8">
+        <p className="text-gray-700">
+          Dynamics are the essential choices that determine how your story unfolds. They establish
+          whether characters change or remain steadfast, how problems are solved, and what drives
+          the story forward.
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-indigo-900">Character Dynamics</h2>
+          <div className="space-y-3">
+            <div className="bg-white border-l-4 border-indigo-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Main Character Resolve</h3>
+              <p className="text-gray-700">How the Main Character ultimately deals with their central conflict</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-indigo-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Main Character Growth</h3>
+              <p className="text-gray-700">The direction the Main Character must move to resolve their personal issues</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-indigo-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Main Character Approach</h3>
+              <p className="text-gray-700">The Main Character's preferred method of resolving conflict</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-indigo-900">Story Dynamics</h2>
+          <div className="space-y-3">
+            <div className="bg-white border-l-4 border-purple-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Problem-Solving Style</h3>
+              <p className="text-gray-700">Determines whether problems are addressed linearly or holistically</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-purple-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Story Limit</h3>
+              <p className="text-gray-700">Sets whether the story runs out of time or options first</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-purple-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Story Driver</h3>
+              <p className="text-gray-700">Establishes whether actions or decisions drive the story forward</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-indigo-900">Conclusion Dynamics</h2>
+          <div className="space-y-3">
+            <div className="bg-white border-l-4 border-blue-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Story Outcome</h3>
+              <p className="text-gray-700">An objective assessment of how the effort to achieve the Story Goal ends</p>
+            </div>
+
+            <div className="bg-white border-l-4 border-blue-400 p-5 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2">Story Judgment</h3>
+              <p className="text-gray-700">The author's evaluation of the Main Character's personal resolution</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 bg-indigo-50 p-6 rounded-lg border border-indigo-100">
+        <h3 className="font-semibold text-lg mb-2">See Dynamics in Action</h3>
+        <p className="text-gray-700 mb-4">
+          Explore how dynamics shape character arcs and story progression:
+        </p>
+        <Link
+          to="/stories"
+          className="inline-flex items-center text-indigo-600 hover:underline font-medium"
+        >
+          Browse Story Library <ArrowRight className="w-4 h-4 ml-1" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function VectorsPage() {
+  return (
+    <div className="max-w-4xl mx-auto">
+      <Link to="/docs" className="text-blue-600 hover:underline mb-6 inline-block">
+        ← Back to terminology
+      </Link>
+      <h1 className="text-4xl font-bold mb-4">Vectors</h1>
+      <p className="text-xl text-gray-600 mb-8">
+        Directional choices within dynamics that determine specific narrative outcomes
+      </p>
+
+      <div className="bg-green-50 border border-green-100 rounded-lg p-6 mb-8">
+        <p className="text-gray-700">
+          Vectors are the specific directional choices within each dynamic. They represent the
+          binary or polar decisions that shape how your story resolves - Change vs Steadfast,
+          Start vs Stop, Success vs Failure.
+        </p>
+      </div>
+
+      <div className="space-y-6">
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Resolve Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-green-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-green-700">Change</h3>
+              <p className="text-gray-700 text-sm">The Main Character abandons their central point-of-view</p>
+            </div>
+
+            <div className="bg-white border-2 border-green-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-green-700">Steadfast</h3>
+              <p className="text-gray-700 text-sm">The Main Character holds to their central point-of-view</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Growth Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-teal-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-teal-700">Stop</h3>
+              <p className="text-gray-700 text-sm">Growth comes from letting go of an unhealthy behavior or attitude</p>
+            </div>
+
+            <div className="bg-white border-2 border-teal-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-teal-700">Start</h3>
+              <p className="text-gray-700 text-sm">Growth comes from adopting a new behavior or attitude</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Approach Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-emerald-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-emerald-700">Do-er</h3>
+              <p className="text-gray-700 text-sm">The Main Character prefers to solve problems by taking action</p>
+            </div>
+
+            <div className="bg-white border-2 border-emerald-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-emerald-700">Be-er</h3>
+              <p className="text-gray-700 text-sm">The Main Character prefers to solve problems by adjusting internally</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Problem-Solving Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-lime-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-lime-700">Linear</h3>
+              <p className="text-gray-700 text-sm">Problems are addressed through cause-and-effect logic</p>
+            </div>
+
+            <div className="bg-white border-2 border-lime-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-lime-700">Holistic</h3>
+              <p className="text-gray-700 text-sm">Problems are addressed by balancing relationships and context</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Limit Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-cyan-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-cyan-700">Time</h3>
+              <p className="text-gray-700 text-sm">A story limited by a fixed amount of time</p>
+            </div>
+
+            <div className="bg-white border-2 border-cyan-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-cyan-700">Options</h3>
+              <p className="text-gray-700 text-sm">A story limited by the number of options available</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Driver Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-sky-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-sky-700">Action</h3>
+              <p className="text-gray-700 text-sm">Actions force the decisions in the story</p>
+            </div>
+
+            <div className="bg-white border-2 border-sky-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-sky-700">Decision</h3>
+              <p className="text-gray-700 text-sm">Decisions force the actions in the story</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-green-900">Conclusion Vectors</h2>
+          <div className="grid md:grid-cols-2 gap-4 mb-4">
+            <div className="bg-white border-2 border-blue-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-blue-700">Success</h3>
+              <p className="text-gray-700 text-sm">The Story Goal is achieved</p>
+            </div>
+
+            <div className="bg-white border-2 border-blue-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-blue-700">Failure</h3>
+              <p className="text-gray-700 text-sm">The Story Goal is not achieved</p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white border-2 border-violet-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-violet-700">Good</h3>
+              <p className="text-gray-700 text-sm">The Main Character resolves their personal baggage</p>
+            </div>
+
+            <div className="bg-white border-2 border-violet-300 p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-violet-700">Bad</h3>
+              <p className="text-gray-700 text-sm">The Main Character fails to resolve their personal baggage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 bg-green-50 p-6 rounded-lg border border-green-100">
+        <h3 className="font-semibold text-lg mb-2">See Vectors in Stories</h3>
+        <p className="text-gray-700 mb-4">
+          Discover how different vector combinations create unique story outcomes:
+        </p>
+        <Link
+          to="/stories"
+          className="inline-flex items-center text-green-600 hover:underline font-medium"
+        >
+          Browse Story Library <ArrowRight className="w-4 h-4 ml-1" />
         </Link>
       </div>
     </div>
@@ -159,6 +477,9 @@ export function TerminologyBrowser() {
     <Routes>
       <Route index element={<TerminologyHome />} />
       <Route path="perspectives" element={<PerspectivesPage />} />
+      <Route path="functions" element={<NarrativeFunctionsPage />} />
+      <Route path="dynamics" element={<DynamicsPage />} />
+      <Route path="vectors" element={<VectorsPage />} />
       <Route path="*" element={<TerminologyHome />} />
     </Routes>
   );
