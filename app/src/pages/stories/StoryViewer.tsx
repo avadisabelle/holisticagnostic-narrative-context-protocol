@@ -393,21 +393,39 @@ export function StoryViewer() {
 
         {viewMode === 'perspectives' && (
           <div>
-            <h2 className="text-2xl font-bold mb-4">Perspectives</h2>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold">Perspectives</h2>
+              <Link
+                to="/docs/perspectives"
+                className="text-sm text-blue-600 hover:underline flex items-center gap-1"
+              >
+                <Book className="w-4 h-4" />
+                Learn about Perspectives
+              </Link>
+            </div>
             {narrative.subtext?.perspectives && narrative.subtext.perspectives.length > 0 ? (
-              <div className="grid gap-6">
-                {narrative.subtext.perspectives.map((perspective) => (
-                  <div key={perspective.id} className="border-l-4 border-blue-500 pl-4">
-                    <h3 className="font-semibold text-lg mb-2">{perspective.label}</h3>
-                    <p className="text-gray-700 mb-2">{perspective.description}</p>
-                    {perspective.thematic_question && (
-                      <p className="text-sm text-gray-600 italic">"{perspective.thematic_question}"</p>
-                    )}
-                    {perspective.authorial_position && (
-                      <p className="text-sm text-blue-600 mt-2">Position: {perspective.authorial_position}</p>
-                    )}
-                  </div>
-                ))}
+              <div className="space-y-6">
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-blue-900 leading-relaxed">
+                    <strong>About Perspectives:</strong> Each perspective represents a distinct thematic viewpoint in the story.
+                    This story explores {narrative.subtext.perspectives.length} different perspectives,
+                    each revealing unique tensions and questions.
+                  </p>
+                </div>
+                <div className="grid gap-6">
+                  {narrative.subtext.perspectives.map((perspective) => (
+                    <div key={perspective.id} className="border-l-4 border-blue-500 pl-4 bg-blue-50 bg-opacity-30 p-4 rounded-r-lg">
+                      <h3 className="font-semibold text-lg mb-2">{perspective.label}</h3>
+                      <p className="text-gray-700 mb-2">{perspective.description}</p>
+                      {perspective.thematic_question && (
+                        <p className="text-sm text-gray-600 italic mb-2">"{perspective.thematic_question}"</p>
+                      )}
+                      {perspective.authorial_position && (
+                        <p className="text-sm text-blue-600">Position: {perspective.authorial_position}</p>
+                      )}
+                    </div>
+                  ))}
+                </div>
               </div>
             ) : (
               <p className="text-gray-600">No perspectives data available for this story.</p>
@@ -591,9 +609,24 @@ export function StoryViewer() {
 
         {viewMode === 'dynamics' && (
           <div>
-            <h2 className="text-2xl font-bold mb-4">Narrative Dynamics</h2>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold">Narrative Dynamics</h2>
+              <Link
+                to="/docs/dynamics"
+                className="text-sm text-pink-600 hover:underline flex items-center gap-1"
+              >
+                <Book className="w-4 h-4" />
+                Learn about Dynamics
+              </Link>
+            </div>
             {narrative.subtext?.dynamics && narrative.subtext.dynamics.length > 0 ? (
               <div className="space-y-6">
+                <div className="bg-pink-50 border border-pink-200 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-pink-900 leading-relaxed">
+                    <strong>About Dynamics:</strong> Dynamics are the narrative forces that drive character development and story evolution.
+                    This story contains {narrative.subtext.dynamics.length} dynamics shaping its dramatic arc.
+                  </p>
+                </div>
                 {narrative.subtext.dynamics.map((dynamic) => (
                   <div key={dynamic.id} className="border border-gray-200 rounded-lg p-4">
                     <h3 className="font-semibold text-lg mb-2">{dynamic.label}</h3>

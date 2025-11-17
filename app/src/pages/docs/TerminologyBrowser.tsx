@@ -165,17 +165,24 @@ function PerspectivesPage() {
         </div>
       </div>
 
-      <div className="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-100">
-        <h3 className="font-semibold text-lg mb-2">See It In Action</h3>
-        <p className="text-gray-700 mb-4">
-          Explore how perspectives work in real stories:
-        </p>
-        <Link
-          to="/stories/the-shawshank-redemption"
-          className="inline-flex items-center text-blue-600 hover:underline font-medium"
-        >
-          The Shawshank Redemption <ArrowRight className="w-4 h-4 ml-1" />
-        </Link>
+      <div className="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border-2 border-blue-200">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Book className="w-5 h-5 text-white" />
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-2">See Perspectives In Action</h3>
+            <p className="text-gray-700 mb-4">
+              Explore how perspectives create thematic depth in a real story with 5 different viewpoints:
+            </p>
+            <Link
+              to="/stories/story_catalyst_of_change"
+              className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+            >
+              The Catalyst of Change <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -591,17 +598,24 @@ function DynamicsPage() {
         </div>
       </div>
 
-      <div className="mt-8 bg-indigo-50 p-6 rounded-lg border border-indigo-100">
-        <h3 className="font-semibold text-lg mb-2">See Dynamics in Action</h3>
-        <p className="text-gray-700 mb-4">
-          Explore how dynamics shape character arcs and story progression:
-        </p>
-        <Link
-          to="/stories"
-          className="inline-flex items-center text-indigo-600 hover:underline font-medium"
-        >
-          Browse Story Library <ArrowRight className="w-4 h-4 ml-1" />
-        </Link>
+      <div className="mt-8 bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg border-2 border-indigo-200">
+        <div className="flex items-start gap-4">
+          <div className="w-10 h-10 bg-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Zap className="w-5 h-5 text-white" />
+          </div>
+          <div>
+            <h3 className="font-bold text-lg mb-2">See Dynamics In Action</h3>
+            <p className="text-gray-700 mb-4">
+              Explore how dynamics shape character arcs and story progression in a real narrative:
+            </p>
+            <Link
+              to="/stories/story_catalyst_of_change"
+              className="inline-flex items-center bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
+            >
+              The Catalyst of Change <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );
