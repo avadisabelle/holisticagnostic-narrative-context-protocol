@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useStoryStore } from '../../lib/store/storyStore';
 import { LoadingSpinner, ErrorMessage } from '../../components/ui';
-import { ArrowLeft, Book, Users, Map, Sparkles, Layers, Milestone, Film, Search } from 'lucide-react';
+import { ArrowLeft, Book, Users, Map, Sparkles, Layers, Milestone, Film, Search, TrendingUp, BarChart3, CheckCircle2 } from 'lucide-react';
 import type { Narrative } from '../../types/story';
 
 type ViewMode = 'overview' | 'perspectives' | 'players' | 'storybeats' | 'storypoints' | 'dynamics' | 'moments';
@@ -162,31 +162,231 @@ export function StoryViewer() {
       {/* Content Area */}
       <div className="bg-white rounded-lg border border-gray-200 p-8">
         {viewMode === 'overview' && (
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Story Overview</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold text-lg mb-2">Narrative Title</h3>
-                <p className="text-gray-700">{narrative.title}</p>
+          <div className="space-y-8">
+            {/* Story Information */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-200">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <Book className="w-8 h-8 text-white" />
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">{narrative.title}</h2>
+                  {currentStory.metadata?.description && (
+                    <p className="text-gray-700 leading-relaxed mb-3">{currentStory.metadata.description}</p>
+                  )}
+                  <div className="flex flex-wrap gap-3 text-sm">
+                    {currentStory.author && (
+                      <span className="bg-white bg-opacity-70 px-3 py-1 rounded-full text-gray-700">
+                        <strong>Author:</strong> {currentStory.author}
+                      </span>
+                    )}
+                    {currentStory.date_written && (
+                      <span className="bg-white bg-opacity-70 px-3 py-1 rounded-full text-gray-700">
+                        <strong>Date:</strong> {currentStory.date_written}
+                      </span>
+                    )}
+                  </div>
+                </div>
               </div>
-              {currentStory.metadata?.description && (
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Description</h3>
-                  <p className="text-gray-700">{currentStory.metadata.description}</p>
+            </div>
+
+            {/* Interactive Statistics Dashboard */}
+            <div>
+              <div className="flex items-center gap-3 mb-6">
+                <BarChart3 className="w-6 h-6 text-gray-700" />
+                <h2 className="text-2xl font-bold text-gray-900">Story Structure Overview</h2>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Perspectives Card */}
+                <button
+                  onClick={() => setViewMode('perspectives')}
+                  className="bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-blue-200 rounded-xl p-6 hover:shadow-xl hover:border-blue-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Layers className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.subtext?.perspectives && narrative.subtext.perspectives.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-blue-900 mb-2">Perspectives</h3>
+                  <p className="text-3xl font-bold text-blue-700 mb-2">
+                    {narrative.subtext?.perspectives?.length || 0}
+                  </p>
+                  <p className="text-sm text-blue-800">Thematic viewpoints</p>
+                  <div className="mt-3 text-sm text-blue-600 font-medium group-hover:underline">
+                    Explore perspectives →
+                  </div>
+                </button>
+
+                {/* Players Card */}
+                <button
+                  onClick={() => setViewMode('players')}
+                  className="bg-gradient-to-br from-purple-50 to-purple-100 border-2 border-purple-200 rounded-xl p-6 hover:shadow-xl hover:border-purple-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Users className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.subtext?.players && narrative.subtext.players.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-purple-900 mb-2">Players</h3>
+                  <p className="text-3xl font-bold text-purple-700 mb-2">
+                    {narrative.subtext?.players?.length || 0}
+                  </p>
+                  <p className="text-sm text-purple-800">Characters with roles</p>
+                  <div className="mt-3 text-sm text-purple-600 font-medium group-hover:underline">
+                    View characters →
+                  </div>
+                </button>
+
+                {/* Story Beats Card */}
+                <button
+                  onClick={() => setViewMode('storybeats')}
+                  className="bg-gradient-to-br from-green-50 to-green-100 border-2 border-green-200 rounded-xl p-6 hover:shadow-xl hover:border-green-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Map className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.subtext?.storybeats && narrative.subtext.storybeats.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-green-900 mb-2">Story Beats</h3>
+                  <p className="text-3xl font-bold text-green-700 mb-2">
+                    {narrative.subtext?.storybeats?.length || 0}
+                  </p>
+                  <p className="text-sm text-green-800">Narrative events</p>
+                  <div className="mt-3 text-sm text-green-600 font-medium group-hover:underline">
+                    Browse timeline →
+                  </div>
+                </button>
+
+                {/* Story Points Card */}
+                <button
+                  onClick={() => setViewMode('storypoints')}
+                  className="bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-200 rounded-xl p-6 hover:shadow-xl hover:border-amber-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Milestone className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.subtext?.storypoints && narrative.subtext.storypoints.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-amber-900 mb-2">Story Points</h3>
+                  <p className="text-3xl font-bold text-amber-700 mb-2">
+                    {narrative.subtext?.storypoints?.length || 0}
+                  </p>
+                  <p className="text-sm text-amber-800">Major turning points</p>
+                  <div className="mt-3 text-sm text-amber-600 font-medium group-hover:underline">
+                    View milestones →
+                  </div>
+                </button>
+
+                {/* Dynamics Card */}
+                <button
+                  onClick={() => setViewMode('dynamics')}
+                  className="bg-gradient-to-br from-pink-50 to-pink-100 border-2 border-pink-200 rounded-xl p-6 hover:shadow-xl hover:border-pink-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Sparkles className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.subtext?.dynamics && narrative.subtext.dynamics.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-pink-900 mb-2">Dynamics</h3>
+                  <p className="text-3xl font-bold text-pink-700 mb-2">
+                    {narrative.subtext?.dynamics?.length || 0}
+                  </p>
+                  <p className="text-sm text-pink-800">Narrative forces</p>
+                  <div className="mt-3 text-sm text-pink-600 font-medium group-hover:underline">
+                    Explore dynamics →
+                  </div>
+                </button>
+
+                {/* Moments Card */}
+                <button
+                  onClick={() => setViewMode('moments')}
+                  className="bg-gradient-to-br from-indigo-50 to-indigo-100 border-2 border-indigo-200 rounded-xl p-6 hover:shadow-xl hover:border-indigo-400 transition-all text-left group"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 bg-indigo-500 rounded-lg flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                      <Film className="w-6 h-6 text-white" />
+                    </div>
+                    {narrative.storytelling?.moments && narrative.storytelling.moments.length > 0 && (
+                      <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold text-indigo-900 mb-2">Moments</h3>
+                  <p className="text-3xl font-bold text-indigo-700 mb-2">
+                    {narrative.storytelling?.moments?.length || 0}
+                  </p>
+                  <p className="text-sm text-indigo-800">Storytelling scenes</p>
+                  <div className="mt-3 text-sm text-indigo-600 font-medium group-hover:underline">
+                    View moments →
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            {/* Quick Insights */}
+            <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <TrendingUp className="w-5 h-5 text-gray-700" />
+                <h3 className="text-lg font-bold text-gray-900">Quick Insights</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-4 text-sm">
+                <div className="bg-white p-4 rounded-lg">
+                  <p className="text-gray-600 mb-1">Total Structural Elements</p>
+                  <p className="text-2xl font-bold text-gray-900">
+                    {(narrative.subtext?.perspectives?.length || 0) +
+                      (narrative.subtext?.players?.length || 0) +
+                      (narrative.subtext?.storybeats?.length || 0) +
+                      (narrative.subtext?.storypoints?.length || 0) +
+                      (narrative.subtext?.dynamics?.length || 0) +
+                      (narrative.storytelling?.moments?.length || 0)}
+                  </p>
                 </div>
-              )}
-              {narrative.subtext?.storypoints && (
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Key Story Points</h3>
-                  <p className="text-gray-600">{narrative.subtext.storypoints.length} major turning points</p>
+                <div className="bg-white p-4 rounded-lg">
+                  <p className="text-gray-600 mb-1">Sections with Data</p>
+                  <p className="text-2xl font-bold text-gray-900">
+                    {[
+                      narrative.subtext?.perspectives,
+                      narrative.subtext?.players,
+                      narrative.subtext?.storybeats,
+                      narrative.subtext?.storypoints,
+                      narrative.subtext?.dynamics,
+                      narrative.storytelling?.moments,
+                    ].filter((section) => section && section.length > 0).length}{' '}
+                    / 6
+                  </p>
                 </div>
-              )}
-              {narrative.subtext?.storybeats && (
-                <div>
-                  <h3 className="font-semibold text-lg mb-2">Story Beats</h3>
-                  <p className="text-gray-600">{narrative.subtext.storybeats.length} narrative beats</p>
-                </div>
-              )}
+                {narrative.subtext?.storybeats && narrative.subtext.storybeats.length > 0 && (
+                  <div className="bg-white p-4 rounded-lg">
+                    <p className="text-gray-600 mb-1">Longest Story Arc</p>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {narrative.subtext.storybeats.length} beats
+                    </p>
+                  </div>
+                )}
+                {narrative.subtext?.perspectives && narrative.subtext.perspectives.length > 0 && (
+                  <div className="bg-white p-4 rounded-lg">
+                    <p className="text-gray-600 mb-1">Thematic Depth</p>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {narrative.subtext.perspectives.length} viewpoints
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         )}

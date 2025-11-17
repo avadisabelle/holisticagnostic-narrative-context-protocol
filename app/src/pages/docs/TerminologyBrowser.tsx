@@ -1,5 +1,5 @@
 import { Link, Routes, Route } from 'react-router-dom';
-import { Book, Users, Zap, TrendingUp, Layers, ArrowRight } from 'lucide-react';
+import { Book, Zap, TrendingUp, Layers, ArrowRight, Target, Lightbulb } from 'lucide-react';
 
 function TerminologyHome() {
   return (
@@ -11,66 +11,93 @@ function TerminologyHome() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Link
           to="/docs/perspectives"
-          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-blue-300 transition-all"
         >
           <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
             <Layers className="w-6 h-6 text-blue-600" />
           </div>
           <h3 className="text-2xl font-semibold mb-2">Perspectives</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 text-sm">
             The four throughlines that shape narrative structure: Objective Story, Main Character,
             Influence Character, and Relationship Story.
           </p>
-          <span className="text-blue-600 font-medium">Explore perspectives →</span>
+          <span className="text-blue-600 font-medium text-sm">Explore perspectives →</span>
+        </Link>
+
+        <Link
+          to="/docs/appreciations"
+          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-rose-300 transition-all"
+        >
+          <div className="w-12 h-12 bg-rose-100 rounded-lg flex items-center justify-center mb-4">
+            <Target className="w-6 h-6 text-rose-600" />
+          </div>
+          <h3 className="text-2xl font-semibold mb-2">Appreciations</h3>
+          <p className="text-gray-600 mb-4 text-sm">
+            Story points that illuminate narrative structure: Solutions, Problems, Symptoms, and
+            other key appreciations.
+          </p>
+          <span className="text-rose-600 font-medium text-sm">Explore appreciations →</span>
         </Link>
 
         <Link
           to="/docs/functions"
-          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-purple-300 transition-all"
         >
           <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
             <Book className="w-6 h-6 text-purple-600" />
           </div>
           <h3 className="text-2xl font-semibold mb-2">Narrative Functions</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 text-sm">
             The engines of conflict - processes that shape the story's meaning and drive narrative
             progression.
           </p>
-          <span className="text-purple-600 font-medium">Explore functions →</span>
+          <span className="text-purple-600 font-medium text-sm">Explore functions →</span>
         </Link>
 
         <Link
           to="/docs/dynamics"
-          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-indigo-300 transition-all"
         >
           <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
             <Zap className="w-6 h-6 text-indigo-600" />
           </div>
           <h3 className="text-2xl font-semibold mb-2">Dynamics</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 text-sm">
             How characters and stories change - the forces that drive growth, conflict, and
             resolution.
           </p>
-          <span className="text-indigo-600 font-medium">Explore dynamics →</span>
+          <span className="text-indigo-600 font-medium text-sm">Explore dynamics →</span>
         </Link>
 
         <Link
           to="/docs/vectors"
-          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
+          className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-green-300 transition-all"
         >
           <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
             <TrendingUp className="w-6 h-6 text-green-600" />
           </div>
           <h3 className="text-2xl font-semibold mb-2">Vectors</h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 mb-4 text-sm">
             Directional choices that determine narrative outcomes - Change vs Steadfast, Stop vs
             Start, and more.
           </p>
-          <span className="text-green-600 font-medium">Explore vectors →</span>
+          <span className="text-green-600 font-medium text-sm">Explore vectors →</span>
         </Link>
+
+        <div className="bg-gradient-to-br from-amber-50 to-yellow-50 border-2 border-amber-200 rounded-lg p-6">
+          <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+            <Lightbulb className="w-6 h-6 text-amber-600" />
+          </div>
+          <h3 className="text-xl font-semibold mb-2">Learning Path</h3>
+          <p className="text-gray-700 text-sm leading-relaxed">
+            Start with <strong>Perspectives</strong> to understand the four viewpoints, then explore{' '}
+            <strong>Dynamics</strong> and <strong>Vectors</strong> to see how stories evolve.{' '}
+            <strong>Appreciations</strong> help you identify specific story elements.
+          </p>
+        </div>
       </div>
 
       <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8 border border-blue-100">
@@ -148,6 +175,268 @@ function PerspectivesPage() {
           className="inline-flex items-center text-blue-600 hover:underline font-medium"
         >
           The Shawshank Redemption <ArrowRight className="w-4 h-4 ml-1" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function AppreciationsPage() {
+  const appreciationsByKind = {
+    solution: [
+      {
+        name: 'Objective Story Solution',
+        definition: 'What alters the course for those involved in the Objective Story Throughline; an indication of self-actualization',
+        context: 'Objective Story'
+      },
+    ],
+    problem: [
+      {
+        name: 'Objective Story Problem',
+        definition: 'The essence of inequity in the Objective Story Throughline',
+        context: 'Objective Story'
+      },
+      {
+        name: 'Main Character Problem',
+        definition: 'The source of conflict within the Main Character Throughline',
+        context: 'Main Character'
+      },
+    ],
+    concern: [
+      {
+        name: 'Objective Story Concern',
+        definition: 'The area of concern for everyone in the Objective Story Throughline',
+        context: 'Objective Story'
+      },
+      {
+        name: 'Objective Story Benchmark',
+        definition: 'The standard by which progress is measured in the Objective Story',
+        context: 'Objective Story'
+      },
+    ],
+    issue: [
+      {
+        name: 'Objective Story Issue',
+        definition: 'The issue of greatest thematic focus within the Objective Story Throughline',
+        context: 'Objective Story'
+      },
+      {
+        name: 'Objective Story Catalyst',
+        definition: 'The item whose presence always pushes the Objective Story forward',
+        context: 'Objective Story'
+      },
+      {
+        name: 'Objective Story Inhibitor',
+        definition: "The item that impedes the Objective Story's progress",
+        context: 'Objective Story'
+      },
+    ],
+    response: [
+      {
+        name: 'Objective Story Response',
+        definition: 'The direction of efforts in the Objective Story',
+        context: 'Objective Story'
+      },
+      {
+        name: 'Objective Story Flow',
+        definition: 'The adaptive response to narrative challenges, where characters navigate obstacles by embracing flexibility',
+        context: 'Objective Story'
+      },
+    ],
+    symptom: [
+      {
+        name: 'Objective Story Symptom',
+        definition: 'Where attention is focused in the Objective Story',
+        context: 'Objective Story'
+      },
+    ],
+    domain: [
+      {
+        name: 'Objective Story Domain',
+        definition: 'The general area of conflict as it applies to everyone in the Objective Story Throughline',
+        context: 'Objective Story'
+      },
+    ],
+  };
+
+  return (
+    <div className="max-w-5xl mx-auto">
+      <Link to="/docs" className="text-blue-600 hover:underline mb-6 inline-block">
+        ← Back to terminology
+      </Link>
+      <h1 className="text-4xl font-bold mb-4">Appreciations of Narrative</h1>
+      <p className="text-xl text-gray-600 mb-8">
+        Story points that illuminate the structure and meaning of your narrative
+      </p>
+
+      <div className="bg-rose-50 border border-rose-100 rounded-lg p-6 mb-8">
+        <p className="text-gray-700 leading-relaxed">
+          Appreciations are specific aspects of your story that help you understand its deeper structure.
+          They identify key elements like problems, solutions, concerns, and responses within each throughline.
+          By understanding these appreciations, you can see how your story creates meaning and drives toward resolution.
+        </p>
+      </div>
+
+      <div className="space-y-8">
+        {/* Solutions */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+              <Target className="w-5 h-5 text-green-600" />
+            </div>
+            <h2 className="text-2xl font-bold text-green-900">Solutions</h2>
+          </div>
+          <div className="grid gap-4">
+            {appreciationsByKind.solution.map((item, i) => (
+              <div key={i} className="bg-white border-l-4 border-green-400 p-5 rounded-r-lg shadow-sm">
+                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <p className="text-gray-700 mb-2">{item.definition}</p>
+                <span className="text-xs font-medium px-2 py-1 bg-green-100 text-green-700 rounded">
+                  {item.context}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Problems */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">
+              <span className="text-red-600 font-bold text-xl">⚠</span>
+            </div>
+            <h2 className="text-2xl font-bold text-red-900">Problems</h2>
+          </div>
+          <div className="grid gap-4">
+            {appreciationsByKind.problem.map((item, i) => (
+              <div key={i} className="bg-white border-l-4 border-red-400 p-5 rounded-r-lg shadow-sm">
+                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <p className="text-gray-700 mb-2">{item.definition}</p>
+                <span className="text-xs font-medium px-2 py-1 bg-red-100 text-red-700 rounded">
+                  {item.context}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Concerns */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+              <span className="text-blue-600 font-bold text-xl">💭</span>
+            </div>
+            <h2 className="text-2xl font-bold text-blue-900">Concerns</h2>
+          </div>
+          <div className="grid gap-4">
+            {appreciationsByKind.concern.map((item, i) => (
+              <div key={i} className="bg-white border-l-4 border-blue-400 p-5 rounded-r-lg shadow-sm">
+                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <p className="text-gray-700 mb-2">{item.definition}</p>
+                <span className="text-xs font-medium px-2 py-1 bg-blue-100 text-blue-700 rounded">
+                  {item.context}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Issues */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center">
+              <span className="text-amber-600 font-bold text-xl">⚡</span>
+            </div>
+            <h2 className="text-2xl font-bold text-amber-900">Issues</h2>
+          </div>
+          <div className="grid gap-4">
+            {appreciationsByKind.issue.map((item, i) => (
+              <div key={i} className="bg-white border-l-4 border-amber-400 p-5 rounded-r-lg shadow-sm">
+                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <p className="text-gray-700 mb-2">{item.definition}</p>
+                <span className="text-xs font-medium px-2 py-1 bg-amber-100 text-amber-700 rounded">
+                  {item.context}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Responses */}
+        <div>
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+              <ArrowRight className="w-5 h-5 text-purple-600" />
+            </div>
+            <h2 className="text-2xl font-bold text-purple-900">Responses</h2>
+          </div>
+          <div className="grid gap-4">
+            {appreciationsByKind.response.map((item, i) => (
+              <div key={i} className="bg-white border-l-4 border-purple-400 p-5 rounded-r-lg shadow-sm">
+                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <p className="text-gray-700 mb-2">{item.definition}</p>
+                <span className="text-xs font-medium px-2 py-1 bg-purple-100 text-purple-700 rounded">
+                  {item.context}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Symptoms & Domains */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                <span className="text-orange-600 font-bold text-xl">🔍</span>
+              </div>
+              <h2 className="text-2xl font-bold text-orange-900">Symptoms</h2>
+            </div>
+            <div className="grid gap-4">
+              {appreciationsByKind.symptom.map((item, i) => (
+                <div key={i} className="bg-white border-l-4 border-orange-400 p-5 rounded-r-lg shadow-sm">
+                  <h3 className="font-semibold text-base mb-2">{item.name}</h3>
+                  <p className="text-gray-700 text-sm mb-2">{item.definition}</p>
+                  <span className="text-xs font-medium px-2 py-1 bg-orange-100 text-orange-700 rounded">
+                    {item.context}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center">
+                <span className="text-indigo-600 font-bold text-xl">🌐</span>
+              </div>
+              <h2 className="text-2xl font-bold text-indigo-900">Domains</h2>
+            </div>
+            <div className="grid gap-4">
+              {appreciationsByKind.domain.map((item, i) => (
+                <div key={i} className="bg-white border-l-4 border-indigo-400 p-5 rounded-r-lg shadow-sm">
+                  <h3 className="font-semibold text-base mb-2">{item.name}</h3>
+                  <p className="text-gray-700 text-sm mb-2">{item.definition}</p>
+                  <span className="text-xs font-medium px-2 py-1 bg-indigo-100 text-indigo-700 rounded">
+                    {item.context}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 bg-rose-50 p-6 rounded-lg border border-rose-100">
+        <h3 className="font-semibold text-lg mb-2">Explore Appreciations in Stories</h3>
+        <p className="text-gray-700 mb-4">
+          See how these appreciations manifest in real narratives:
+        </p>
+        <Link
+          to="/stories"
+          className="inline-flex items-center text-rose-600 hover:underline font-medium"
+        >
+          Browse Story Library <ArrowRight className="w-4 h-4 ml-1" />
         </Link>
       </div>
     </div>
@@ -477,6 +766,7 @@ export function TerminologyBrowser() {
     <Routes>
       <Route index element={<TerminologyHome />} />
       <Route path="perspectives" element={<PerspectivesPage />} />
+      <Route path="appreciations" element={<AppreciationsPage />} />
       <Route path="functions" element={<NarrativeFunctionsPage />} />
       <Route path="dynamics" element={<DynamicsPage />} />
       <Route path="vectors" element={<VectorsPage />} />
