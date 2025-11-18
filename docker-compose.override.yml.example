@@ -1,0 +1,50 @@
+# Docker Compose Override Example
+# Copy this to docker-compose.override.yml and customize for your local setup
+# docker-compose.override.yml is automatically loaded and merged with docker-compose.yml
+
+version: '3.9'
+
+services:
+  app-dev:
+    # Custom port mapping (if 5177 is in use)
+    # ports:
+    #   - "5178:5177"
+
+    # Add environment variables
+    # environment:
+    #   - VITE_DEBUG=true
+    #   - VITE_API_URL=http://localhost:3000
+
+    # Mount additional volumes
+    # volumes:
+    #   - ./custom-examples:/app/public/examples-custom:ro
+
+    # Resource limits
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '2'
+    #       memory: 2G
+    #     reservations:
+    #       cpus: '1'
+    #       memory: 512M
+
+  app-prod:
+    # Custom port for production testing
+    # ports:
+    #   - "5179:5177"
+
+    # Add environment variables
+    # environment:
+    #   - NODE_ENV=production
+    #   - VITE_API_URL=https://api.example.com
+
+    # Resource limits for production
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '1'
+    #       memory: 1G
+    #     reservations:
+    #       cpus: '0.5'
+    #       memory: 256M
