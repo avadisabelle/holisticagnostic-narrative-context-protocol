@@ -1,0 +1,78 @@
+version: '3.9'
+
+services:
+  # ============================================
+  # NCP Story Studio - Development
+  # ============================================
+  app-dev:
+    build:
+      context: ./app
+      target: development
+      dockerfile: Dockerfile
+    container_name: ncp-story-studio-dev
+    ports:
+      - "5177:5177"
+    volumes:
+      # Mount source code for hot reload
+      - ./app/src:/app/src:ro
+      - ./app/public:/app/public:ro
+      - ./app/index.html:/app/index.html:ro
+      - ./app/vite.config.ts:/app/vite.config.ts:ro
+      - ./app/tsconfig.json:/app/tsconfig.json:ro
+      - ./app/tsconfig.node.json:/app/tsconfig.node.json:ro
+      - ./app/tailwind.config.js:/app/tailwind.config.js:ro
+      - ./app/postcss.config.js:/app/postcss.config.js:ro
+      # Persist node_modules
+      - node_modules_dev:/app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_APP_TITLE=NCP Story Studio (Dev)
+    networks:
+      - ncp-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:5177/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    profiles:
+      - dev
+
+  # ============================================
+  # NCP Story Studio - Production
+  # ============================================
+  app-prod:
+    build:
+      context: ./app
+      target: production
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=production
+    container_name: ncp-story-studio-prod
+    ports:
+      - "5177:5177"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - ncp-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:5177/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    profiles:
+      - prod
+    labels:
+      - "com.ncp.description=NCP Story Studio - Interactive Narrative Structure Explorer"
+      - "com.ncp.version=1.0.0"
+
+volumes:
+  node_modules_dev:
+    driver: local
+
+networks:
+  ncp-network:
+    driver: bridge
