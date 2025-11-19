@@ -1,0 +1,131 @@
+name: Docker Build & Test
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  # Test development build
+  test-dev-build:
+    name: Test Development Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build development image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./app
+          target: development
+          push: false
+          tags: ncp-story-studio:dev
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Test development container
+        run: |
+          docker run -d --name ncp-dev -p 5177:5177 ncp-story-studio:dev
+          sleep 10
+          curl --fail http://localhost:5177 || exit 1
+          docker stop ncp-dev
+
+  # Test production build
+  test-prod-build:
+    name: Test Production Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build production image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./app
+          target: production
+          push: false
+          tags: ncp-story-studio:prod
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Test production container
+        run: |
+          docker run -d --name ncp-prod -p 5177:5177 ncp-story-studio:prod
+          sleep 5
+          curl --fail http://localhost:5177/health || exit 1
+          curl --fail http://localhost:5177/ || exit 1
+          docker stop ncp-prod
+
+      - name: Check image size
+        run: |
+          SIZE=$(docker image inspect ncp-story-studio:prod --format='{{.Size}}' | awk '{print int($1/1024/1024)}')
+          echo "Image size: ${SIZE}MB"
+          if [ $SIZE -gt 100 ]; then
+            echo "⚠️  Warning: Image size is larger than expected (${SIZE}MB > 100MB)"
+          else
+            echo "✓ Image size is optimal: ${SIZE}MB"
+          fi
+
+  # Test docker-compose
+  test-compose:
+    name: Test Docker Compose
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Test development profile
+        run: |
+          docker-compose --profile dev config
+          docker-compose --profile dev up -d
+          sleep 15
+          curl --fail http://localhost:5177 || exit 1
+          docker-compose --profile dev down -v
+
+      - name: Test production profile
+        run: |
+          docker-compose --profile prod config
+          docker-compose --profile prod up -d
+          sleep 10
+          curl --fail http://localhost:5177/health || exit 1
+          docker-compose --profile prod down
+
+  # Security scan
+  security-scan:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build production image for scanning
+        uses: docker/build-push-action@v5
+        with:
+          context: ./app
+          target: production
+          load: true
+          tags: ncp-story-studio:scan
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ncp-story-studio:scan
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+
+      - name: Upload Trivy results to GitHub Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'

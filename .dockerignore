@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+!README.md
+
+# CI/CD
+.github
+
+# Docker files (at root level)
+docker-compose*.yml
+Dockerfile
+
+# Scripts
+scripts/
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env*
+
+# Logs
+*.log
+
+# Development docs (not needed in container)
+rispecs/
+__llms/

@@ -47,7 +47,32 @@ In 2025, **Write Brothers®**—creators of Dramatica® and Movie Magic Screenwr
 
 ## Getting Started
 
-Begin by reading the complete [Specification](/SPECIFICATION.md)
+### Explore with NCP Story Studio
+
+The fastest way to understand NCP is through the **NCP Story Studio** - an interactive web application for exploring narrative structure:
+
+```bash
+# Quick start with Docker
+make dev-start
+
+# Or using docker-compose directly
+docker-compose --profile dev up
+```
+
+Access at **http://localhost:5177**
+
+See [DOCKER-QUICKSTART.md](./DOCKER-QUICKSTART.md) for more options.
+
+**Features:**
+- 🎭 Interactive terminology browser
+- 📖 Example stories with multiple structural views
+- 📊 Statistics dashboard showing story completeness
+- 🔗 Cross-linking between theory and practice
+- 🎨 Beautiful, responsive interface
+
+### Understand the Specification
+
+Read the complete [Specification](/SPECIFICATION.md) to understand the schema in depth
 
 ## Repository Structure
 ```
@@ -58,26 +83,50 @@ narrative-context-protocol/
 ├── CONTRIBUTING.md
 ├── HISTORY.md
 ├── LICENSE.md
+├── CLAUDE.md                      # Development guide for NCP Story Studio
+├── DOCKER.md                      # Comprehensive Docker documentation
+├── DOCKER-QUICKSTART.md           # Quick Docker reference
+├── Makefile                       # Convenient Docker commands
+├── docker-compose.yml             # Docker orchestration
+├── .env.example                   # Environment configuration template
+│
+├── app/                           # NCP Story Studio (React application)
+│   ├── src/                      # Application source code
+│   ├── public/                   # Static assets
+│   ├── Dockerfile                # Multi-stage Docker build
+│   ├── nginx.conf                # Production web server config
+│   ├── DEVELOPMENT.md            # Development session logs
+│   └── package.json
+│
+├── scripts/                       # Helper scripts
+│   ├── docker-dev.sh             # Development Docker commands
+│   └── docker-prod.sh            # Production Docker commands
+│
 ├── schema/
 │   ├── ncp-schema.json
 │   └── ncp-schema.yaml
-├── examples/
+│
+├── examples/                      # Example NCP stories
 │   ├── anora.json
 │   ├── the-shawshank-redemption.json
-│   ├── example-story.json
-│   └── example-mapping.json
+│   ├── weaver_of_words__the_catalyst_of_change_251101.json
+│   └── example-story.json
+│
 ├── docs/
-│   ├── terminology/
-│       ├── 01.perspectives.md
-│       ├── 02.appreciations-of-narrative.md
-│       ├── 03.narrative-functions.md
-│       ├── 04.dynamics.md
-│       ├── 05.vectors.md
-│       ├── 10.dramatica-translation.md
+│   ├── terminology/              # Narrative terminology definitions
+│   │   ├── 01.perspectives.md
+│   │   ├── 02.appreciations-of-narrative.md
+│   │   ├── 03.narrative-functions.md
+│   │   ├── 04.dynamics.md
+│   │   └── 05.vectors.md
 │   └── narrative-context-protocol-schema.md
-├── tests/
-│   └── validate-schema.js
-└── .gitignore
+│
+├── rispecs/                       # RISE specifications for app components
+│   ├── README.md
+│   └── app.spec.md
+│
+└── tests/
+    └── validate-schema.js
 ```
 
 ## Licensing & Governance  
