@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useStoryStore } from '../../lib/store/storyStore';
 import { LoadingSpinner, ErrorMessage } from '../../components/ui';
+import { QuickJumpMenu } from '../../components/ui/QuickJumpMenu';
 import { ArrowLeft, Book, Users, Map, Sparkles, Layers, Milestone, Film, Search, TrendingUp, BarChart3, CheckCircle2 } from 'lucide-react';
 import type { Narrative } from '../../types/story';
 
@@ -47,6 +48,47 @@ export function StoryViewer() {
   }
 
   const narrative: Narrative = currentStory.narratives[0]; // Use first narrative for now
+
+  // Build quick jump sections
+  const quickJumpSections = [
+    { id: 'overview', label: 'Overview', icon: <Book className="w-4 h-4" /> },
+    {
+      id: 'perspectives',
+      label: 'Perspectives',
+      icon: <Layers className="w-4 h-4" />,
+      count: narrative.subtext?.perspectives?.length || 0,
+    },
+    {
+      id: 'players',
+      label: 'Players',
+      icon: <Users className="w-4 h-4" />,
+      count: narrative.subtext?.players?.length || 0,
+    },
+    {
+      id: 'storybeats',
+      label: 'Story Beats',
+      icon: <Map className="w-4 h-4" />,
+      count: narrative.subtext?.storybeats?.length || 0,
+    },
+    {
+      id: 'storypoints',
+      label: 'Story Points',
+      icon: <Milestone className="w-4 h-4" />,
+      count: narrative.subtext?.storypoints?.length || 0,
+    },
+    {
+      id: 'dynamics',
+      label: 'Dynamics',
+      icon: <Sparkles className="w-4 h-4" />,
+      count: narrative.subtext?.dynamics?.length || 0,
+    },
+    {
+      id: 'moments',
+      label: 'Moments',
+      icon: <Film className="w-4 h-4" />,
+      count: narrative.storytelling?.moments?.length || 0,
+    },
+  ];
 
   return (
     <div className="max-w-7xl mx-auto">
@@ -736,6 +778,13 @@ export function StoryViewer() {
           </div>
         )}
       </div>
+
+      {/* Quick Jump Menu */}
+      <QuickJumpMenu
+        sections={quickJumpSections}
+        currentSection={viewMode}
+        onJumpTo={(sectionId) => setViewMode(sectionId as ViewMode)}
+      />
     </div>
   );
 }
