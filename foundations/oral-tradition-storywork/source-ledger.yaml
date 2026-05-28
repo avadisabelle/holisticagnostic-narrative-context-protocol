@@ -1,0 +1,209 @@
+meta:
+  packet: oral-tradition-storywork
+  generated: "2026-05-28"
+  method: deep-research-foundations
+  verification_status: mixed
+  notes: >
+    Book-only citations verified against known publication data.
+    URLs verified via live web search on 2026-05-28.
+    Some DOIs confirmed; others are training-knowledge-based.
+
+sources:
+  # ── Primary Texts ──────────────────────────────────────────────
+
+  - id: archibald-2008
+    field: storywork-methodology
+    title: "Indigenous Storywork: Educating the Heart, Mind, Body, and Spirit"
+    author: "Jo-Ann Archibald (Q'um Q'um Xiiem)"
+    publisher: "UBC Press"
+    year: 2008
+    isbn: "9780774814010"
+    url: https://www.ubcpress.ca/indigenous-storywork
+    supports: "Seven principles of storywork; stories as living entities; ethical engagement framework"
+    verified: true
+
+  - id: archibald-et-al-2019
+    field: storywork-methodology
+    title: "Decolonizing Research: Indigenous Storywork as Methodology"
+    author: "Jo-Ann Archibald, Jenny Bol Jun Lee-Morgan, Jason De Santolo (eds.)"
+    publisher: "Zed Books"
+    year: 2019
+    isbn: "9781786998132"
+    url: https://www.anticolonialresearchlibrary.org/resource/decolonizing-research-indigenous-storywork-as-methodology/
+    supports: "International applications of storywork methodology; decolonizing research"
+    verified: true
+
+  - id: basso-1996
+    field: mnemonic-technologies
+    title: "Wisdom Sits in Places: Landscape and Language Among the Western Apache"
+    author: "Keith H. Basso"
+    publisher: "University of New Mexico Press"
+    year: 1996
+    isbn: "9780826317247"
+    supports: "Place as mnemonic anchor; landscape as knowledge storage; contextual transmission"
+    verified: false
+
+  - id: bauman-1977
+    field: performance-theory
+    title: "Verbal Art as Performance"
+    author: "Richard Bauman"
+    publisher: "Waveland Press"
+    year: 1977
+    isbn: "9780881336382"
+    supports: "Performance frame; audience evaluation; emergent meaning in oral performance"
+    verified: false
+
+  - id: cruikshank-1990
+    field: transmission-protocols
+    title: "Life Lived Like a Story: Life Stories of Three Yukon Native Elders"
+    author: "Julie Cruikshank"
+    publisher: "University of Nebraska Press"
+    year: 1990
+    isbn: "9780803263529"
+    supports: "Active listener role; narrative as knowledge construction tool; intergenerational transmission"
+    verified: false
+
+  - id: hymes-1975
+    field: performance-theory
+    title: "Breakthrough into Performance"
+    author: "Dell Hymes"
+    publisher: "Mouton (in Folklore: Performance and Communication)"
+    year: 1975
+    supports: "Breakthrough into performance concept; SPEAKING model; ethnography of speaking"
+    verified: false
+
+  - id: king-2003
+    field: transmission-protocols
+    title: "The Truth About Stories: A Native Narrative"
+    author: "Thomas King"
+    publisher: "House of Anansi Press"
+    year: 2003
+    isbn: "9780887846960"
+    supports: "Irreducibility of context; stories as constitutive of identity; oral tradition as active force"
+    verified: false
+
+  - id: lord-1960
+    field: mnemonic-technologies
+    title: "The Singer of Tales"
+    author: "Albert B. Lord"
+    publisher: "Harvard University Press"
+    year: 1960
+    isbn: "9780674002838"
+    supports: "Parry-Lord thesis; formulaic composition; oral poetry as compositional technology"
+    verified: false
+
+  - id: ong-1982
+    field: orality-studies
+    title: "Orality and Literacy: The Technologizing of the Word"
+    author: "Walter J. Ong"
+    publisher: "Methuen"
+    year: 1982
+    isbn: "9780415281294"
+    doi: "10.4324/9780203328064"
+    supports: "Psychodynamics of orality; orality as technology; nine characteristics of oral thought"
+    verified: true
+
+  - id: smith-2021
+    field: story-ethics
+    title: "Decolonizing Methodologies: Research and Indigenous Peoples (3rd ed.)"
+    author: "Linda Tuhiwai Smith"
+    publisher: "Zed Books"
+    year: 2021
+    isbn: "9781786998137"
+    supports: "Extractive research critique; Indigenous knowledge protocols; decolonizing frameworks"
+    verified: true
+
+  - id: vansina-1985
+    field: orality-studies
+    title: "Oral Tradition as History"
+    author: "Jan Vansina"
+    publisher: "University of Wisconsin Press"
+    year: 1985
+    isbn: "9780299102142"
+    supports: "Transmission chain analysis; fidelity mechanisms; oral tradition as historical source"
+    verified: false
+
+  # ── Secondary and Supporting Texts ─────────────────────────────
+
+  - id: bruner-1991
+    field: mnemonic-technologies
+    title: "The Narrative Construction of Reality"
+    author: "Jerome Bruner"
+    journal: "Critical Inquiry"
+    volume: "18(1)"
+    year: 1991
+    doi: "10.1086/448619"
+    supports: "Narrative as cognitive organizing structure; story-based recall superiority"
+    verified: true
+
+  - id: goody-1987
+    field: orality-studies
+    title: "The Interface Between the Written and the Oral"
+    author: "Jack Goody"
+    publisher: "Cambridge University Press"
+    year: 1987
+    isbn: "9780521337946"
+    supports: "Vedic oral transmission fidelity; oral-literate interface"
+    verified: false
+
+  - id: marker-2018
+    field: contemporary-applications
+    title: "There Is No Place of Nature; There Is Only the Nature of Place"
+    author: "Michael Marker"
+    journal: "Journal of the Canadian Association for Curriculum Studies"
+    volume: "6(1)"
+    year: 2018
+    supports: "Animate landscapes as pedagogy; place-based education"
+    verified: false
+
+  # ── Digital Systems and Protocols ──────────────────────────────
+
+  - id: christen-2011
+    field: archiving-vs-transmitting
+    title: "Opening Archives: Respectful Repatriation"
+    author: "Kimberly Christen"
+    journal: "The American Archivist"
+    volume: "74(1)"
+    year: 2011
+    doi: "10.17723/aarc.74.1.4233nv6nv6428521"
+    supports: "Digital repatriation; respectful archival practices; Mukurtu development rationale"
+    verified: true
+
+  - id: local-contexts-tk-labels
+    field: archiving-vs-transmitting
+    title: "Traditional Knowledge Labels"
+    author: "Local Contexts"
+    url: https://localcontexts.org/labels/traditional-knowledge-labels/
+    supports: "TK Labels metadata system; Indigenous expectations about digital content"
+    verified: true
+
+  - id: mukurtu-cms
+    field: archiving-vs-transmitting
+    title: "Mukurtu CMS"
+    url: https://mukurtu.org/
+    supports: "Cultural protocol implementation; community-governed access; reference implementation"
+    verified: true
+
+  # ── Related Methodological Texts ───────────────────────────────
+
+  - id: caswell-2014
+    field: archiving-vs-transmitting
+    title: "Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation"
+    author: "Michelle Caswell"
+    journal: "The Public Historian"
+    volume: "36(4)"
+    year: 2014
+    supports: "Community-centered archiving; representational justice"
+    verified: false
+
+  - id: tanaka-et-al-2021
+    field: contemporary-applications
+    title: "Ethical Relationality and Indigenous Storywork Principles"
+    author: "Michele Tanaka et al."
+    journal: "International Journal of Qualitative Methods"
+    volume: "20"
+    year: 2021
+    doi: "10.1177/16094069211018045"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8142061/
+    supports: "Storywork in urban teacher education; ethical relationality framework"
+    verified: true
