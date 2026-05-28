@@ -1,0 +1,279 @@
+meta:
+  packet: decolonization-protocol-extensions
+  generated: "2026-05-28"
+  method: deep-research-foundations
+  verification_status: mixed
+  notes: >
+    Book-only citations verified against known publication data.
+    URLs verified via live web search on 2026-05-28.
+    Some DOIs confirmed; others are training-knowledge-based.
+
+sources:
+  # ── Primary Decolonial and Critical Data Studies ──────────────────
+
+  - id: couldry-mejias-2019
+    field: data-colonialism
+    title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism"
+    author: "Nick Couldry, Ulises Mejias"
+    publisher: "Stanford University Press"
+    year: 2019
+    doi: "10.1515/9781503609754"
+    supports: "Data colonialism framework; appropriation of human life through data; colonial continuity in digital systems"
+    verified: true
+
+  - id: noble-2018
+    field: algorithmic-oppression
+    title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+    author: "Safiya Umoja Noble"
+    publisher: "NYU Press"
+    year: 2018
+    doi: "10.18574/nyu/9781479833641.001.0001"
+    isbn: "9781479849949"
+    supports: "Algorithmic systems reproduce racial hierarchies; technology as non-neutral; search as power"
+    verified: true
+
+  - id: benjamin-2019
+    field: critical-technology-studies
+    title: "Race After Technology: Abolitionist Tools for the New Jim Code"
+    author: "Ruha Benjamin"
+    publisher: "Polity Press"
+    year: 2019
+    isbn: "9781509526406"
+    supports: "New Jim Code concept; technology encodes discrimination through appearance of neutrality"
+    verified: true
+
+  - id: smith-2021
+    field: decolonial-methodology
+    title: "Decolonizing Methodologies: Research and Indigenous Peoples (3rd ed.)"
+    author: "Linda Tuhiwai Smith"
+    publisher: "Zed Books"
+    year: 2021
+    isbn: "9781786998137"
+    supports: "Extractive research critique; Indigenous knowledge protocols; decolonizing frameworks"
+    verified: true
+
+  - id: kukutai-taylor-2016
+    field: indigenous-data-sovereignty
+    title: "Indigenous Data Sovereignty: Toward an Agenda"
+    author: "Tahu Kukutai, John Taylor (eds.)"
+    publisher: "ANU Press"
+    year: 2016
+    doi: "10.22459/CAEPR38.11.2016"
+    url: https://press.anu.edu.au/publications/series/centre-aboriginal-economic-policy-research-caepr/indigenous-data-sovereignty
+    supports: "Establishes concept and political framework of Indigenous data sovereignty"
+    verified: true
+
+  # ── Indigenous Data Governance Frameworks ──────────────────────────
+
+  - id: care-principles
+    field: indigenous-data-governance
+    title: "CARE Principles for Indigenous Data Governance"
+    author: "Global Indigenous Data Alliance (GIDA)"
+    year: 2019
+    url: https://www.gida-global.org/care
+    supports: "Collective Benefit, Authority to Control, Responsibility, Ethics principles"
+    verified: true
+
+  - id: ocap-principles
+    field: indigenous-data-governance
+    title: "The First Nations Principles of OCAP"
+    author: "First Nations Information Governance Centre (FNIGC)"
+    year: 2014
+    url: https://fnigc.ca/ocap-training/
+    supports: "Ownership, Control, Access, Possession principles for First Nations data governance"
+    verified: true
+
+  - id: local-contexts-tk-labels
+    field: indigenous-metadata
+    title: "Traditional Knowledge Labels"
+    author: "Local Contexts (Jane Anderson, Kim Christen)"
+    url: https://localcontexts.org/labels/traditional-knowledge-labels/
+    supports: "TK Labels metadata system; Indigenous expectations about digital content"
+    verified: true
+
+  - id: mukurtu-cms
+    field: digital-protocols
+    title: "Mukurtu CMS"
+    author: "Kim Christen et al."
+    url: https://mukurtu.org/
+    supports: "Cultural protocol implementation in digital repository systems"
+    verified: true
+
+  - id: undrip-2007
+    field: international-law
+    title: "United Nations Declaration on the Rights of Indigenous Peoples"
+    author: "United Nations General Assembly"
+    year: 2007
+    url: https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/11/UNDRIP_E_web.pdf
+    supports: "Articles 31, 11: Indigenous rights to cultural heritage, traditional knowledge, and self-determination"
+    verified: true
+
+  - id: d4bl
+    field: data-justice
+    title: "Data for Black Lives"
+    author: "Yeshimabeit Milner et al."
+    url: https://d4bl.org/
+    supports: "Data science for racial justice; challenges data-as-neutral framing"
+    verified: true
+
+  # ── Linguistic Relativity and Speech Act Theory ────────────────────
+
+  - id: austin-1962
+    field: speech-act-theory
+    title: "How to Do Things with Words"
+    author: "J.L. Austin"
+    publisher: "Harvard University Press"
+    year: 1962
+    isbn: "9780674411524"
+    supports: "Speech act theory; felicity conditions for performative utterances"
+    verified: false
+
+  - id: searle-1969
+    field: speech-act-theory
+    title: "Speech Acts: An Essay in the Philosophy of Language"
+    author: "John Searle"
+    publisher: "Cambridge University Press"
+    year: 1969
+    doi: "10.1017/CBO9781139173438"
+    supports: "Formalized felicity conditions; illocutionary force"
+    verified: false
+
+  - id: whorf-1956
+    field: linguistic-relativity
+    title: "Language, Thought, and Reality: Selected Writings of Benjamin Lee Whorf"
+    author: "Benjamin Lee Whorf (ed. John B. Carroll)"
+    publisher: "MIT Press"
+    year: 1956
+    isbn: "9780262730068"
+    supports: "Linguistic relativity hypothesis; Hopi time concepts"
+    verified: false
+
+  - id: boroditsky-2011
+    field: linguistic-relativity
+    title: "Linguistic Relativity"
+    author: "Lera Boroditsky"
+    year: 2011
+    doi: "10.1017/CBO9781139013468.026"
+    supports: "Empirical evidence for moderate Sapir-Whorf effects across languages"
+    verified: false
+
+  - id: hymes-1972
+    field: communicative-competence
+    title: "On Communicative Competence"
+    author: "Dell Hymes"
+    year: 1972
+    publisher: "In Sociolinguistics, ed. J.B. Pride and J. Holmes, Penguin"
+    supports: "Communicative competence; language appropriateness in context"
+    verified: false
+
+  # ── Decolonial Computing and Protocol Design ───────────────────────
+
+  - id: christen-2012
+    field: decolonial-computing
+    title: "Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness"
+    author: "Kimberly Christen"
+    journal: "International Journal of Communication"
+    volume: "6"
+    year: 2012
+    supports: "Challenges open access as universally beneficial; community-governed access"
+    verified: false
+
+  - id: anderson-christen-2019
+    field: decolonial-computing
+    title: "'Chuck a Copyright on It': Dilemmas of Digital Return and the Possibilities for Traditional Knowledge Labels"
+    author: "Jane Anderson, Kim Christen"
+    journal: "DHQ: Digital Humanities Quarterly"
+    year: 2019
+    supports: "TK Labels as practical governance tools in digital contexts"
+    verified: false
+
+  - id: christen-2011
+    field: decolonial-computing
+    title: "Opening Archives: Respectful Repatriation"
+    author: "Kimberly Christen"
+    journal: "The American Archivist"
+    volume: "74(1)"
+    year: 2011
+    doi: "10.17723/aarc.74.1.4233nv6nv6428521"
+    supports: "Digital repatriation; respectful archival practices; Mukurtu rationale"
+    verified: true
+
+  - id: caswell-2014
+    field: community-archiving
+    title: "Seeing Yourself in History: Community Archives and the Fight Against Symbolic Annihilation"
+    author: "Michelle Caswell"
+    journal: "The Public Historian"
+    volume: "36(4)"
+    year: 2014
+    supports: "Community-centered archiving; representational justice"
+    verified: false
+
+  # ── Cross-referenced from oral-tradition-storywork packet ──────────
+
+  - id: archibald-2008
+    field: storywork-methodology
+    title: "Indigenous Storywork: Educating the Heart, Mind, Body, and Spirit"
+    author: "Jo-Ann Archibald (Q'um Q'um Xiiem)"
+    publisher: "UBC Press"
+    year: 2008
+    isbn: "9780774814010"
+    url: https://www.ubcpress.ca/indigenous-storywork
+    supports: "Seven principles of storywork; stories as living entities"
+    verified: true
+    crossref: "oral-tradition-storywork/source-ledger.yaml#archibald-2008"
+
+  - id: ong-1982
+    field: orality-studies
+    title: "Orality and Literacy: The Technologizing of the Word"
+    author: "Walter J. Ong"
+    publisher: "Methuen"
+    year: 1982
+    isbn: "9780415281294"
+    doi: "10.4324/9780203328064"
+    supports: "Psychodynamics of orality; orality as technology"
+    verified: true
+    crossref: "oral-tradition-storywork/source-ledger.yaml#ong-1982"
+
+  - id: basso-1996
+    field: mnemonic-technologies
+    title: "Wisdom Sits in Places: Landscape and Language Among the Western Apache"
+    author: "Keith H. Basso"
+    publisher: "University of New Mexico Press"
+    year: 1996
+    isbn: "9780826317247"
+    supports: "Place as mnemonic anchor; landscape as knowledge storage"
+    verified: false
+    crossref: "oral-tradition-storywork/source-ledger.yaml#basso-1996"
+
+  - id: bauman-1977
+    field: performance-theory
+    title: "Verbal Art as Performance"
+    author: "Richard Bauman"
+    publisher: "Waveland Press"
+    year: 1977
+    isbn: "9780881336382"
+    supports: "Performance frame; emergent meaning in oral performance"
+    verified: false
+    crossref: "oral-tradition-storywork/source-ledger.yaml#bauman-1977"
+
+  - id: king-2003
+    field: oral-tradition
+    title: "The Truth About Stories: A Native Narrative"
+    author: "Thomas King"
+    publisher: "House of Anansi Press"
+    year: 2003
+    isbn: "9780887846960"
+    supports: "Irreducibility of context; stories as constitutive of identity"
+    verified: false
+    crossref: "oral-tradition-storywork/source-ledger.yaml#king-2003"
+
+  - id: cruikshank-1990
+    field: oral-tradition
+    title: "Life Lived Like a Story: Life Stories of Three Yukon Native Elders"
+    author: "Julie Cruikshank"
+    publisher: "University of Nebraska Press"
+    year: 1990
+    isbn: "9780803263529"
+    supports: "Active listener role; narrative as knowledge construction"
+    verified: false
+    crossref: "oral-tradition-storywork/source-ledger.yaml#cruikshank-1990"
