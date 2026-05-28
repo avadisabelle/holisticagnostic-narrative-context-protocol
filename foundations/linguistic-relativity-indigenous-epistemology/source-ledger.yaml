@@ -1,0 +1,402 @@
+meta:
+  packet: linguistic-relativity-indigenous-epistemology
+  generated: "2026-05-28"
+  method: deep-research-foundations
+  agents: 5 parallel claude-opus research agents
+  verification_status: mixed
+  notes: >
+    Unified source ledger for the cross-field synthesis.
+    Full field-specific source ledgers are maintained in:
+    - foundations/oral-tradition-storywork/source-ledger.yaml (19 sources)
+    - foundations/decolonization-protocol-extensions/source-ledger.yaml (30+ sources)
+    - Inline citations in linguistic-relativity.md (45 sources)
+    - Inline citations in indigenous-epistemology.md (full DOI list)
+    - Inline citations in speech-act-theory.md (30+ sources)
+
+sources:
+  # ── Linguistic Relativity & Ethnolinguistics ────────────────────
+
+  - id: whorf-1956
+    field: linguistic-relativity
+    title: "Language, Thought, and Reality: Selected Writings of Benjamin Lee Whorf"
+    author: "Benjamin Lee Whorf (ed. John B. Carroll)"
+    publisher: "MIT Press"
+    year: 1956
+    isbn: "9780262730068"
+    supports: "Linguistic relativity hypothesis; grammatical categories shape habitual thought"
+    verified: false
+
+  - id: boroditsky-2001
+    field: linguistic-relativity
+    title: "Does Language Shape Thought? Mandarin and English Speakers' Conceptions of Time"
+    author: "Lera Boroditsky"
+    journal: "Cognitive Psychology"
+    volume: "43(1)"
+    year: 2001
+    doi: "10.1006/cogp.2001.0748"
+    supports: "Mandarin vertical time metaphors affect temporal reasoning"
+    verified: true
+
+  - id: lucy-1992
+    field: linguistic-relativity
+    title: "Grammatical Categories and Cognition: A Case Study of the Linguistic Relativity Hypothesis"
+    author: "John A. Lucy"
+    publisher: "Cambridge University Press"
+    year: 1992
+    doi: "10.1017/CBO9780511620713"
+    supports: "Yucatec Maya numeral classifiers affect object classification"
+    verified: true
+
+  - id: levinson-2003
+    field: linguistic-relativity
+    title: "Space in Language and Cognition: Explorations in Cognitive Diversity"
+    author: "Stephen C. Levinson"
+    publisher: "Cambridge University Press"
+    year: 2003
+    doi: "10.1017/CBO9780511613609"
+    supports: "Absolute vs. relative spatial reference frames affect spatial cognition"
+    verified: true
+
+  - id: mithun-1999
+    field: linguistic-relativity
+    title: "The Languages of Native North America"
+    author: "Marianne Mithun"
+    publisher: "Cambridge University Press"
+    year: 1999
+    isbn: "9780521298551"
+    supports: "Mohawk polysynthesis; Algonquian animacy; relational verb systems"
+    verified: true
+
+  - id: aikhenvald-2004
+    field: linguistic-relativity
+    title: "Evidentiality"
+    author: "Alexandra Y. Aikhenvald"
+    publisher: "Oxford University Press"
+    year: 2004
+    doi: "10.1093/acprof:oso/9780198700883.001.0001"
+    supports: "Grammatical evidentiality; obligatory source-of-knowledge marking"
+    verified: true
+
+  - id: wierzbicka-2014
+    field: linguistic-relativity
+    title: "Imprisoned in English: The Hazards of English as a Default Language"
+    author: "Anna Wierzbicka"
+    publisher: "Oxford University Press"
+    year: 2014
+    isbn: "9780199321490"
+    supports: "English-derived categories impose implicit worldview; Natural Semantic Metalanguage"
+    verified: true
+
+  - id: slobin-1996
+    field: linguistic-relativity
+    title: "From 'thought and language' to 'thinking for speaking'"
+    author: "Dan I. Slobin"
+    publisher: "Cambridge University Press (in Rethinking Linguistic Relativity)"
+    year: 1996
+    supports: "Thinking-for-speaking effect; language shapes online cognitive processing"
+    verified: false
+
+  - id: nunez-sweetser-2006
+    field: linguistic-relativity
+    title: "With the future behind them: Convergent evidence from Aymara language and gesture"
+    author: "Rafael Núñez, Eve Sweetser"
+    journal: "Cognitive Science"
+    volume: "30(3)"
+    year: 2006
+    doi: "10.1207/s15516709cog0000_62"
+    supports: "Aymara reversed time-space mapping; future behind, past in front"
+    verified: true
+
+  - id: rice-2000
+    field: linguistic-relativity
+    title: "Morpheme Order and Semantic Scope"
+    author: "Keren Rice"
+    publisher: "Cambridge University Press"
+    year: 2000
+    isbn: "9780521583545"
+    supports: "Athabaskan verb morphology; classificatory verb stems"
+    verified: false
+
+  # ── Indigenous Epistemology & Research Methodology ───────────────
+
+  - id: smith-2021
+    field: indigenous-epistemology
+    title: "Decolonizing Methodologies: Research and Indigenous Peoples (3rd ed.)"
+    author: "Linda Tuhiwai Smith"
+    publisher: "Zed Books"
+    year: 2021
+    isbn: "9781786998137"
+    supports: "Extractive research critique; decolonizing frameworks; Indigenous knowledge protocols"
+    verified: true
+
+  - id: wilson-2008
+    field: indigenous-epistemology
+    title: "Research Is Ceremony: Indigenous Research Methods"
+    author: "Shawn Wilson"
+    publisher: "Fernwood Publishing"
+    year: 2008
+    isbn: "9781552662816"
+    supports: "Relational accountability; research as ceremony; Indigenous axiology"
+    verified: true
+
+  - id: kovach-2009
+    field: indigenous-epistemology
+    title: "Indigenous Methodologies: Characteristics, Conversations and Contexts"
+    author: "Margaret Kovach"
+    publisher: "University of Toronto Press"
+    year: 2009
+    isbn: "9781442603615"
+    supports: "Indigenous methodological frameworks; conversational method"
+    verified: true
+
+  - id: cajete-2000
+    field: indigenous-epistemology
+    title: "Native Science: Natural Laws of Interdependence"
+    author: "Gregory Cajete"
+    publisher: "Clear Light Publishers"
+    year: 2000
+    isbn: "9781574160338"
+    supports: "Place-based knowing; ecological understanding as epistemology"
+    verified: false
+
+  - id: little-bear-2000
+    field: indigenous-epistemology
+    title: "Jagged Worldviews Colliding"
+    author: "Leroy Little Bear"
+    publisher: "University of Toronto Press (in Reclaiming Indigenous Voice and Vision)"
+    year: 2000
+    isbn: "9780774807463"
+    supports: "Indigenous vs. Western worldview comparison; flux and renewal"
+    verified: false
+
+  - id: kimmerer-2013
+    field: indigenous-epistemology
+    title: "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge, and the Teachings of Plants"
+    author: "Robin Wall Kimmerer"
+    publisher: "Milkweed Editions"
+    year: 2013
+    isbn: "9781571313560"
+    supports: "Two-knowledge-system integration; grammar of animacy; reciprocal relationships"
+    verified: true
+
+  # ── Speech Act Theory & Pragmatics ──────────────────────────────
+
+  - id: austin-1962
+    field: speech-act-theory
+    title: "How to Do Things with Words"
+    author: "J.L. Austin"
+    publisher: "Harvard University Press"
+    year: 1962
+    isbn: "9780674411524"
+    supports: "Speech act theory; performative utterances; felicity conditions"
+    verified: false
+
+  - id: searle-1969
+    field: speech-act-theory
+    title: "Speech Acts: An Essay in the Philosophy of Language"
+    author: "John R. Searle"
+    publisher: "Cambridge University Press"
+    year: 1969
+    doi: "10.1017/CBO9781139173438"
+    supports: "Constitutive rules; illocutionary force taxonomy"
+    verified: true
+
+  - id: grice-1975
+    field: pragmatics
+    title: "Logic and Conversation"
+    author: "H.P. Grice"
+    publisher: "Academic Press (in Syntax and Semantics 3)"
+    year: 1975
+    supports: "Cooperative Principle; conversational maxims; implicature"
+    verified: false
+
+  - id: butler-1990
+    field: performativity
+    title: "Gender Trouble: Feminism and the Subversion of Identity"
+    author: "Judith Butler"
+    publisher: "Routledge"
+    year: 1990
+    isbn: "9780415389556"
+    supports: "Citational performativity; identity as repeated performance"
+    verified: true
+
+  - id: hymes-1972
+    field: ethnography-of-speaking
+    title: "On Communicative Competence"
+    author: "Dell Hymes"
+    publisher: "Penguin (in Sociolinguistics)"
+    year: 1972
+    supports: "SPEAKING model; communicative competence; contextual appropriateness"
+    verified: false
+
+  - id: bauman-1977
+    field: performance-theory
+    title: "Verbal Art as Performance"
+    author: "Richard Bauman"
+    publisher: "Waveland Press"
+    year: 1977
+    isbn: "9780881336382"
+    supports: "Performance frame; emergent meaning; entextualization"
+    verified: false
+
+  # ── Oral Tradition Studies & Storywork ──────────────────────────
+
+  - id: archibald-2008
+    field: storywork-methodology
+    title: "Indigenous Storywork: Educating the Heart, Mind, Body, and Spirit"
+    author: "Jo-Ann Archibald (Q'um Q'um Xiiem)"
+    publisher: "UBC Press"
+    year: 2008
+    isbn: "9780774814010"
+    url: https://www.ubcpress.ca/indigenous-storywork
+    supports: "Seven storywork principles; stories as living entities; conditions of felicity for narrative"
+    verified: true
+
+  - id: ong-1982
+    field: orality-studies
+    title: "Orality and Literacy: The Technologizing of the Word"
+    author: "Walter J. Ong"
+    publisher: "Methuen"
+    year: 1982
+    isbn: "9780415281294"
+    doi: "10.4324/9780203328064"
+    supports: "Psychodynamics of orality; orality as technology; nine characteristics"
+    verified: true
+
+  - id: king-2003
+    field: oral-tradition
+    title: "The Truth About Stories: A Native Narrative"
+    author: "Thomas King"
+    publisher: "House of Anansi Press"
+    year: 2003
+    isbn: "9780887846960"
+    supports: "Irreducibility of narrative context; stories as constitutive of identity"
+    verified: false
+
+  - id: basso-1996
+    field: mnemonic-technologies
+    title: "Wisdom Sits in Places: Landscape and Language Among the Western Apache"
+    author: "Keith H. Basso"
+    publisher: "University of New Mexico Press"
+    year: 1996
+    isbn: "9780826317247"
+    supports: "Place as mnemonic anchor; landscape as knowledge storage"
+    verified: false
+
+  - id: cruikshank-1990
+    field: oral-tradition
+    title: "Life Lived Like a Story: Life Stories of Three Yukon Native Elders"
+    author: "Julie Cruikshank"
+    publisher: "University of Nebraska Press"
+    year: 1990
+    isbn: "9780803263529"
+    supports: "Active listener role; narrative as knowledge construction"
+    verified: false
+
+  - id: vansina-1985
+    field: orality-studies
+    title: "Oral Tradition as History"
+    author: "Jan Vansina"
+    publisher: "University of Wisconsin Press"
+    year: 1985
+    isbn: "9780299102142"
+    supports: "Transmission chain analysis; fidelity mechanisms"
+    verified: false
+
+  # ── Decolonial Computing & Data Sovereignty ─────────────────────
+
+  - id: couldry-mejias-2019
+    field: data-colonialism
+    title: "The Costs of Connection: How Data Is Colonizing Human Life and Appropriating It for Capitalism"
+    author: "Nick Couldry, Ulises Mejias"
+    publisher: "Stanford University Press"
+    year: 2019
+    doi: "10.1515/9781503609754"
+    supports: "Data colonialism framework; colonial continuity in digital systems"
+    verified: true
+
+  - id: kukutai-taylor-2016
+    field: indigenous-data-sovereignty
+    title: "Indigenous Data Sovereignty: Toward an Agenda"
+    author: "Tahu Kukutai, John Taylor (eds.)"
+    publisher: "ANU Press"
+    year: 2016
+    doi: "10.22459/CAEPR38.11.2016"
+    url: https://press.anu.edu.au/publications/series/centre-aboriginal-economic-policy-research-caepr/indigenous-data-sovereignty
+    supports: "Establishes concept and political framework of Indigenous data sovereignty"
+    verified: true
+
+  - id: noble-2018
+    field: algorithmic-oppression
+    title: "Algorithms of Oppression: How Search Engines Reinforce Racism"
+    author: "Safiya Umoja Noble"
+    publisher: "NYU Press"
+    year: 2018
+    doi: "10.18574/nyu/9781479833641.001.0001"
+    supports: "Technology as non-neutral; algorithmic reproduction of racial hierarchies"
+    verified: true
+
+  - id: benjamin-2019
+    field: critical-technology-studies
+    title: "Race After Technology: Abolitionist Tools for the New Jim Code"
+    author: "Ruha Benjamin"
+    publisher: "Polity Press"
+    year: 2019
+    isbn: "9781509526406"
+    supports: "Technology encodes discrimination through appearance of neutrality"
+    verified: true
+
+  - id: christen-2012
+    field: decolonial-computing
+    title: "Does Information Really Want to be Free? Indigenous Knowledge Systems and the Question of Openness"
+    author: "Kimberly Christen"
+    journal: "International Journal of Communication"
+    volume: "6"
+    year: 2012
+    supports: "Challenges open access as universally beneficial; community-governed access"
+    verified: false
+
+  # ── Governance Frameworks ───────────────────────────────────────
+
+  - id: care-principles
+    field: indigenous-data-governance
+    title: "CARE Principles for Indigenous Data Governance"
+    author: "Global Indigenous Data Alliance (GIDA)"
+    year: 2019
+    url: https://www.gida-global.org/care
+    supports: "Collective Benefit, Authority to Control, Responsibility, Ethics"
+    verified: true
+
+  - id: ocap-principles
+    field: indigenous-data-governance
+    title: "The First Nations Principles of OCAP"
+    author: "First Nations Information Governance Centre (FNIGC)"
+    year: 2014
+    url: https://fnigc.ca/ocap-training/
+    supports: "Ownership, Control, Access, Possession for First Nations data"
+    verified: true
+
+  - id: local-contexts-tk-labels
+    field: indigenous-metadata
+    title: "Traditional Knowledge Labels"
+    author: "Local Contexts (Jane Anderson, Kim Christen)"
+    url: https://localcontexts.org/labels/traditional-knowledge-labels/
+    supports: "TK Labels metadata system for Indigenous digital content"
+    verified: true
+
+  - id: mukurtu-cms
+    field: digital-protocols
+    title: "Mukurtu CMS"
+    author: "Kim Christen et al."
+    url: https://mukurtu.org/
+    supports: "Cultural protocol implementation; community-governed digital access"
+    verified: true
+
+  - id: undrip-2007
+    field: international-law
+    title: "United Nations Declaration on the Rights of Indigenous Peoples"
+    author: "United Nations General Assembly"
+    year: 2007
+    url: https://www.un.org/development/desa/indigenouspeoples/wp-content/uploads/sites/19/2018/11/UNDRIP_E_web.pdf
+    supports: "Articles 31, 11: Indigenous rights to cultural heritage and self-determination"
+    verified: true
