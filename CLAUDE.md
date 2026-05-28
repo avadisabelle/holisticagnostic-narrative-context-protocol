@@ -275,3 +275,10 @@ All contributions should:
 ---
 
 **Remember**: This application exists to enable creative expression through structured narrative understanding. Every feature should advance users naturally toward creating meaningful stories with deep thematic coherence.
+
+------
+ADDITIONAL RELATED WORK:
+------
+
+`/src/Miadi-46/stories/multiverse_3act_2512012121/episodes/` - in there many of the extended NCP schema I am working on might help comprehend how this very own app from the scientific proposing the NCP works with stories is about  (I base my work on them) but extend it.
+
