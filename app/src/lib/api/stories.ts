@@ -5,8 +5,6 @@
 
 import type { Story, StoryListItem, StoryListResponse, ApiError } from '../../types/story';
 
-const EXAMPLE_STORIES_PATH = '/examples';
-
 /**
  * Get list of available stories
  */
