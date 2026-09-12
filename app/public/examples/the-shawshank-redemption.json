@@ -2,8 +2,8 @@
     "story": {
         "id": "dd488e87-41b5-4927-b5ac-d89561510932",
         "title": "The Shawshank Redemption",
-        "genre": "the genre",
-        "logline": "the logline",
+        "genre": "Prison drama",
+        "logline": "A banker wrongly convicted of murdering his wife and her lover serves two life sentences in Shawshank State Penitentiary, where his friendship with fellow inmate Red and his refusal to give up hope carry him toward freedom.",
         "created_at": "2023-05-29T21:52:25.000000Z"
     },
     "narratives": [
@@ -16,7 +16,7 @@
                         {
                             "id": "2b6380b0-4423-442a-bdbf-4eba7cb4a598",
                             "author_structural_pov": "i",
-                            "summary": "Ellis \u00e2\u20ac\u0153Red\u00e2\u20ac\u009d Redding",
+                            "summary": "Ellis \u201cRed\u201d Redding",
                             "storytelling": "Red, a seasoned inmate, carries a profound sense of loyalty and a protective instinct that often puts him at odds with his own survival instincts. His years in the system have made him a pragmatic realist, yet he harbors a quiet hope for redemption that he rarely admits, even to himself."
                         }
                     ],
@@ -417,7 +417,7 @@
                         "narrative_function": "Becoming",
                         "illustration": "becoming a changed man",
                         "summary": "Red is haunted by his past and struggles to take responsibility for his own rehabilitation in order to escape it.",
-                        "storytelling": "Ellis \"Red\" Redding is an inmate who is serving a life sentence for murder. At his parole board hearings, he professes to be a changed man from his experiences is prison, but the truth is\u00e2\u20ac\u201dhe hasn't changed a bit. He's still haunted by the memories of his crime. And these memories make it difficult for him to have any measure of hope, as he is constantly reminded of the person he used to be and the life he took. He is afraid that he will never be able to truly change and that he will always be defined by his past. The only way out for Red is for him to truly change, and to take responsibility for his own rehabilitation.",
+                        "storytelling": "Ellis \"Red\" Redding is an inmate who is serving a life sentence for murder. At his parole board hearings, he professes to be a changed man from his experiences is prison, but the truth is\u2014he hasn't changed a bit. He's still haunted by the memories of his crime. And these memories make it difficult for him to have any measure of hope, as he is constantly reminded of the person he used to be and the life he took. He is afraid that he will never be able to truly change and that he will always be defined by his past. The only way out for Red is for him to truly change, and to take responsibility for his own rehabilitation.",
                         "perspectives": {
                             "perspective_id": "b657b866-8894-4b88-87e2-320d8e303be0"
                         }
@@ -561,7 +561,7 @@
                         "narrative_function": "Oppose",
                         "illustration": "opposing someone",
                         "summary": "Tommy Williams views opposition in prison as essential for self-preservation and identity, using defiance to assert individuality, gain respect, and maintain dignity in a dehumanizing environment.",
-                        "storytelling": "Tommy Williams would argue that opposing someone, especially in a rigid and oppressive environment like prison, is a necessary act of self-preservation and identity. He would justify his brash confidence and impulsive defiance as a way to assert his individuality in a system designed to strip it away. Tommy might embellish his past exploits to gain respect, framing opposition as a way to earn a place in the social hierarchy and avoid being seen as weak or disposable. His hunger for validation would fuel his belief that standing against authority or rivals, even at great personal risk, is the only way to maintain dignity and prove his worth. In his eyes, opposition is not just rebellion\u00e2\u20ac\u201dit's survival.",
+                        "storytelling": "Tommy Williams would argue that opposing someone, especially in a rigid and oppressive environment like prison, is a necessary act of self-preservation and identity. He would justify his brash confidence and impulsive defiance as a way to assert his individuality in a system designed to strip it away. Tommy might embellish his past exploits to gain respect, framing opposition as a way to earn a place in the social hierarchy and avoid being seen as weak or disposable. His hunger for validation would fuel his belief that standing against authority or rivals, even at great personal risk, is the only way to maintain dignity and prove his worth. In his eyes, opposition is not just rebellion\u2014it's survival.",
                         "perspectives": {
                             "perspective_id": "939a158c-8f44-4c63-b064-985e6c732b18"
                         }
@@ -681,7 +681,7 @@
                         "narrative_function": "Rationalization",
                         "illustration": "making excuses for someone's actions",
                         "summary": "",
-                        "storytelling": "Ellis \"Red\" Redding has spent decades in Shawshank rationalizing his actions and his place in the world. He tells himself that his crime, though heinous, was the folly of a young man, and that his years of service in prison have paid his debt to society. Yet, when faced with the needs of others\u00e2\u20ac\u201dlike Andy Dufresne's relentless hope and plans for escape\u00e2\u20ac\u201dRed feels the pull of obligation, a duty to support and protect those who still believe in something greater. This tension between his rationalized acceptance of his fate and the moral obligation to help others forces Red to confront the quiet hope for redemption he has buried deep within. It is in this conflict that Red must decide whether to remain a passive realist or to act on the faint glimmer of hope that perhaps, just perhaps, there is a life waiting for him beyond the prison walls.",
+                        "storytelling": "Ellis \"Red\" Redding has spent decades in Shawshank rationalizing his actions and his place in the world. He tells himself that his crime, though heinous, was the folly of a young man, and that his years of service in prison have paid his debt to society. Yet, when faced with the needs of others\u2014like Andy Dufresne's relentless hope and plans for escape\u2014Red feels the pull of obligation, a duty to support and protect those who still believe in something greater. This tension between his rationalized acceptance of his fate and the moral obligation to help others forces Red to confront the quiet hope for redemption he has buried deep within. It is in this conflict that Red must decide whether to remain a passive realist or to act on the faint glimmer of hope that perhaps, just perhaps, there is a life waiting for him beyond the prison walls.",
                         "perspectives": {
                             "perspective_id": "44fe01d8-e85b-42e5-9388-f7cd3bce304b"
                         }
@@ -797,7 +797,7 @@
                 ],
                 "storybeats": [
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "fd7a1592-9370-55e6-994c-52cdcd88e690",
                         "context": "Objective Story",
                         "appreciation": "Plot Dynamic",
                         "sequence": null,
@@ -810,7 +810,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "e2ec7dcf-8ec7-55d5-9c46-8dccb6f9ea2c",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 1,
@@ -823,46 +823,46 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "f9b943f7-175b-51aa-9a85-9d30153b586c",
                         "context": "Main Character",
                         "appreciation": "Signpost",
                         "sequence": 1,
                         "narrative_function": "Being",
                         "illustration": "pretending everything is OK",
                         "summary": "Red maintains a facade of reform while secretly trading contraband, but Andy's plea for help and defiance begin to erode his pretense of well-being.",
-                        "storytelling": "Red's got this act down pat\u00e2\u20ac\u201dconvincing the board he's reformed, all while his side hustle in contraband thrives behind bars. He's the picture of ease, playing it cool and pretending all's well, even as Andy's request for help hints at the cracks in his facade. But when he basks in the glow of Andy's defiance, Red's charade of pretending to be okay starts to crumble, nudging him towards a path of more significant transformation.",
+                        "storytelling": "Red's got this act down pat\u2014convincing the board he's reformed, all while his side hustle in contraband thrives behind bars. He's the picture of ease, playing it cool and pretending all's well, even as Andy's request for help hints at the cracks in his facade. But when he basks in the glow of Andy's defiance, Red's charade of pretending to be okay starts to crumble, nudging him towards a path of more significant transformation.",
                         "perspectives": {
                             "perspective_id": "d5b02fa5-c645-48cf-acc5-07d7f260a5b3"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "dbe5fe71-3a0e-53b9-a96e-ca5b29c365e0",
                         "context": "Influence Character",
                         "appreciation": "Signpost",
                         "sequence": 1,
                         "narrative_function": "Doing",
                         "illustration": "fighting",
                         "summary": "Andy's defiance in Shawshank inspires Red to reconsider his passivity and contemplate fighting against their bleak imprisonment.",
-                        "storytelling": "Red's always played it safe, but then Andy comes along, fighting the system with every breath. Watching Andy throw punches at their bleak life, it's like he's daring Red to step into the ring himself. And that's the rub\u00e2\u20ac\u201dRed's torn between the comfort of his routine and the scary thought of actually throwing a punch of his own.",
+                        "storytelling": "Red's always played it safe, but then Andy comes along, fighting the system with every breath. Watching Andy throw punches at their bleak life, it's like he's daring Red to step into the ring himself. And that's the rub\u2014Red's torn between the comfort of his routine and the scary thought of actually throwing a punch of his own.",
                         "perspectives": {
                             "perspective_id": "72032555-0e85-4381-8c7f-0704fea00b35"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "9db79573-af3f-516a-b0b8-68d383060437",
                         "context": "Relationship Story",
                         "appreciation": "Signpost",
                         "sequence": 1,
                         "narrative_function": "Memory",
                         "illustration": "calling to mind",
                         "summary": "Red and Andy's friendship in prison deepens through shared memories, reflecting a mutual longing for past freedoms.",
-                        "storytelling": "When Red and Andy first cross paths, there's an unspoken bond that forms as they trade stories about their former lives\u00e2\u20ac\u201dRed, the seasoned insider, and Andy, the infamous banker. Their chat about the rock-hammer isn't just shop talk; it's a dance of memories, each step revealing a bit more of the world they've left behind and the gritty reality they now share. It's in these moments, like when they're slathering tar on the prison roof, that their friendship deepens, rooted in a mutual yearning for the freedom of their pasts.",
+                        "storytelling": "When Red and Andy first cross paths, there's an unspoken bond that forms as they trade stories about their former lives\u2014Red, the seasoned insider, and Andy, the infamous banker. Their chat about the rock-hammer isn't just shop talk; it's a dance of memories, each step revealing a bit more of the world they've left behind and the gritty reality they now share. It's in these moments, like when they're slathering tar on the prison roof, that their friendship deepens, rooted in a mutual yearning for the freedom of their pasts.",
                         "perspectives": {
                             "perspective_id": "e86903e9-44ae-499b-ad04-02e437c75b41"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "e9af1d87-e539-50e0-adf4-f491860dd530",
                         "context": "Objective Story",
                         "appreciation": "Plot Dynamic",
                         "sequence": null,
@@ -875,7 +875,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "c19a7c19-0031-58cd-a7a3-c4b032cdb049",
                         "context": "Main Character",
                         "appreciation": "Signpost",
                         "sequence": 2,
@@ -888,7 +888,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "d7eb59db-7a97-5ed2-962e-3e26bad13572",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 2,
@@ -901,33 +901,33 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "53870a70-a584-5992-a4ec-b8d4516a2a3c",
                         "context": "Influence Character",
                         "appreciation": "Signpost",
                         "sequence": 2,
                         "narrative_function": "Obtaining",
                         "illustration": "gaining power",
                         "summary": "Andy's ascent to power inspires Red to reconsider his own passive existence and contemplate engaging in the high-stakes game of influence within prison walls.",
-                        "storytelling": "Andy's working angles Red never even dreamed of, wheeling and dealing his way into the warden's good graces\u00e2\u20ac\u201dsuddenly, he's the man with the plan, the guy with the power. And there's Red, watching Andy's star rise, feeling that itch, wondering why he's just been sitting on his hands all this time. It's like Andy's showing him a game where the stakes are more than cigarettes and respect\u00e2\u20ac\u201dit's about making a mark, even behind these walls, and Red's not sure he's ready to play.",
+                        "storytelling": "Andy's working angles Red never even dreamed of, wheeling and dealing his way into the warden's good graces\u2014suddenly, he's the man with the plan, the guy with the power. And there's Red, watching Andy's star rise, feeling that itch, wondering why he's just been sitting on his hands all this time. It's like Andy's showing him a game where the stakes are more than cigarettes and respect\u2014it's about making a mark, even behind these walls, and Red's not sure he's ready to play.",
                         "perspectives": {
                             "perspective_id": "a32e1a31-c9e6-42ba-a912-862ca5be2347"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "7f2831fe-c651-5820-9b60-a2585c153cec",
                         "context": "Relationship Story",
                         "appreciation": "Signpost",
                         "sequence": 2,
                         "narrative_function": "Preconscious",
                         "illustration": "being agitated about something",
                         "summary": "Red's preconscious agitation towards Andy's whisper of 'hope' in Shawshank stirs a transformative bond between them.",
-                        "storytelling": "As Andy and Red's camaraderie unfolds, it's the unguarded moments that spark change\u00e2\u20ac\u201dlike when Andy dares to whisper 'hope' amidst the clatter of the lunchroom. Red's fork freezes mid-air, his agitation clear as day; hope, he argues, is nothing but trouble. Yet, it's this very friction, this dance of instinct and challenge, that forges their bond in the fire of Shawshank, each man shaping the other's survival against the prison's unforgiving backdrop.",
+                        "storytelling": "As Andy and Red's camaraderie unfolds, it's the unguarded moments that spark change\u2014like when Andy dares to whisper 'hope' amidst the clatter of the lunchroom. Red's fork freezes mid-air, his agitation clear as day; hope, he argues, is nothing but trouble. Yet, it's this very friction, this dance of instinct and challenge, that forges their bond in the fire of Shawshank, each man shaping the other's survival against the prison's unforgiving backdrop.",
                         "perspectives": {
                             "perspective_id": "e008fd26-9eb2-460f-91b3-46a990d1291a"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "31e446d1-2aa5-5bd3-8d84-2bc0752a1e8a",
                         "context": "Objective Story",
                         "appreciation": "Plot Dynamic",
                         "sequence": null,
@@ -940,7 +940,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "61c7e017-9e49-52e0-b4c2-7f9466fd7959",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 3,
@@ -953,33 +953,33 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "0b7e76a9-4c45-565f-8fca-0bb6e0d38bc5",
                         "context": "Relationship Story",
                         "appreciation": "Signpost",
                         "sequence": 3,
                         "narrative_function": "Subconscious",
                         "illustration": "dreaming of something",
                         "summary": "Andy's dream of Zihuatanejo ignites a subconscious yearning for freedom in Red's once-dormant spirit.",
-                        "storytelling": "In the quiet of the prison night, Andy's voice carries a dream of Zihuatanejo, a beacon of hope that Red tries to shrug off\u00e2\u20ac\u201dbut dreams have a way of taking root. As Andy's steadfast gaze pierces the gloom, his dream seeps into Red's subconscious, stirring a long-dormant hunger for freedom. Their friendship, now a vessel of shared longing, sails them both towards the faintest glimmer of life beyond the bars.",
+                        "storytelling": "In the quiet of the prison night, Andy's voice carries a dream of Zihuatanejo, a beacon of hope that Red tries to shrug off\u2014but dreams have a way of taking root. As Andy's steadfast gaze pierces the gloom, his dream seeps into Red's subconscious, stirring a long-dormant hunger for freedom. Their friendship, now a vessel of shared longing, sails them both towards the faintest glimmer of life beyond the bars.",
                         "perspectives": {
                             "perspective_id": "8d3b08f2-9c0c-4f70-9e90-df690d573f73"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "0fc2e7d0-2402-5343-8a1c-08e1d190a9f8",
                         "context": "Influence Character",
                         "appreciation": "Signpost",
                         "sequence": 3,
                         "narrative_function": "Learning",
                         "illustration": "learning something",
                         "summary": "Andy's thirst for truth and beauty educates Red on the power of learning to transcend their prison confines.",
-                        "storytelling": "When Andy blasts that opera over the loudspeakers, it's like he's schooling Red in a class he didn't know he signed up for\u00e2\u20ac\u201dturns out, beauty can punch through prison walls. Then this kid Tommy waltzes in with a secret that could turn Andy's life around, and Andy's all over it, hungry for the truth like it's his last meal. Red's watching all this, this hunger for knowledge, and it's got him questioning his own rule about not poking the bear\u00e2\u20ac\u201dmaybe some fights are worth baring your claws for.",
+                        "storytelling": "When Andy blasts that opera over the loudspeakers, it's like he's schooling Red in a class he didn't know he signed up for\u2014turns out, beauty can punch through prison walls. Then this kid Tommy waltzes in with a secret that could turn Andy's life around, and Andy's all over it, hungry for the truth like it's his last meal. Red's watching all this, this hunger for knowledge, and it's got him questioning his own rule about not poking the bear\u2014maybe some fights are worth baring your claws for.",
                         "perspectives": {
                             "perspective_id": "61a1c2c5-fa61-4d34-8934-642106c55b0a"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a5603aae-d8d1-5952-8172-bf520d70be15",
                         "context": "Main Character",
                         "appreciation": "Signpost",
                         "sequence": 3,
@@ -992,7 +992,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "6a18c436-958c-5408-96a9-4fd124dafca3",
                         "context": "Objective Story",
                         "appreciation": "Plot Dynamic",
                         "sequence": null,
@@ -1005,20 +1005,20 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "9e1ca63c-e1ea-5322-9c41-b28f092c5cb8",
                         "context": "Influence Character",
                         "appreciation": "Signpost",
                         "sequence": 4,
                         "narrative_function": "Understanding",
                         "illustration": "having an insight into a group",
                         "summary": "Red's epiphany that hope transcends prison walls ignites an understanding of the fragility of the warden's control.",
-                        "storytelling": "Andy's vanishing act hits Red like a ton of bricks\u00e2\u20ac\u201dit's not just a man escaping, it's a whole philosophy breaking out, showing Red that hope ain't just a four-letter word. The warden's empire crumbles, and there's Red, realizing the joint's pecking order was just a house of cards waiting for a breeze. It's a wake-up call, and Red's got to admit, maybe understanding the lay of the land means seeing the walls for what they are\u00e2\u20ac\u201dtemporary.",
+                        "storytelling": "Andy's vanishing act hits Red like a ton of bricks\u2014it's not just a man escaping, it's a whole philosophy breaking out, showing Red that hope ain't just a four-letter word. The warden's empire crumbles, and there's Red, realizing the joint's pecking order was just a house of cards waiting for a breeze. It's a wake-up call, and Red's got to admit, maybe understanding the lay of the land means seeing the walls for what they are\u2014temporary.",
                         "perspectives": {
                             "perspective_id": "77036630-cc15-4556-bbe4-6fbccdddb708"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "6785f0f8-e798-5062-ae3e-8601d238acfd",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 4,
@@ -1031,20 +1031,20 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "48d1777e-100f-5fe9-97e8-543f0dede77b",
                         "context": "Main Character",
                         "appreciation": "Signpost",
                         "sequence": 4,
                         "narrative_function": "Conceptualizing",
                         "illustration": "imagining a new life",
                         "summary": "Red's parole ignites a defiant spark to reimagine his life, unchained and in control.",
-                        "storytelling": "Red's always had a spark of defiance, a quiet kind of rebellion simmering beneath that prison-grey exterior. It's not until he's out, on parole, that this spark ignites into a full-blown blaze, pushing him to conceptualize a life unchained, a life where he's the one calling the shots. And there he is, heart pounding with the thrill of what's ahead, a free man embarking on a journey to a place he's only dared to imagine\u00e2\u20ac\u201da place where his story might just find its happy ending.",
+                        "storytelling": "Red's always had a spark of defiance, a quiet kind of rebellion simmering beneath that prison-grey exterior. It's not until he's out, on parole, that this spark ignites into a full-blown blaze, pushing him to conceptualize a life unchained, a life where he's the one calling the shots. And there he is, heart pounding with the thrill of what's ahead, a free man embarking on a journey to a place he's only dared to imagine\u2014a place where his story might just find its happy ending.",
                         "perspectives": {
                             "perspective_id": "9423aa09-1377-4456-951f-fccc30e5b516"
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "71271e9c-89cf-5dbf-bf1b-6dd74a15a03b",
                         "context": "Objective Story",
                         "appreciation": "Plot Dynamic",
                         "sequence": null,
@@ -1057,7 +1057,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "c1ba1a76-fbb6-563e-a233-709b52efe2f0",
                         "context": "Relationship Story",
                         "appreciation": "Signpost",
                         "sequence": 4,
@@ -1070,7 +1070,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "cfc5b2ee-ce6a-5636-a8ab-522a79b85473",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": null,
@@ -1083,7 +1083,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "6aa81651-6084-5ec9-a8c4-ab6859d61f88",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 2,
@@ -1096,7 +1096,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "bd5cabcd-3e32-5aa1-9a48-daf42a9b1fab",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 3,
@@ -1109,7 +1109,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "dcee33b4-73fb-500c-bda7-af9874dde4c7",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 4,
@@ -1122,7 +1122,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "eba0da1a-a8f3-5fb4-a062-747cbfa3e84f",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 1,
@@ -1135,7 +1135,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "d568fffd-87f9-52cc-8113-2cacef4931c0",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 2,
@@ -1148,7 +1148,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "4613eebc-0713-54b1-abe4-b13402394915",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 3,
@@ -1161,7 +1161,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "ce0d7f01-d09f-5eb3-9547-ebc0fc84d5a7",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 4,
@@ -1174,7 +1174,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "4d4d61f9-7ea2-5e9f-8521-6526aa1f023f",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 1,
@@ -1187,7 +1187,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "44d44da4-05cd-55f8-9fa8-93c1be826d87",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 2,
@@ -1200,7 +1200,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a6ee19b9-0cc8-5740-95b6-f6fa6adac21e",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 3,
@@ -1213,7 +1213,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "22b25009-6c16-5210-8189-d9c44379592e",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 4,
@@ -1226,7 +1226,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "59672b71-3e09-5069-abfa-dc984367ff11",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 1,
@@ -1239,7 +1239,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "f45b00b5-1d8c-5e39-97f5-fcd6910f037c",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 2,
@@ -1252,7 +1252,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "18c2fe98-a7b2-55f0-8da5-e75544922f12",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 3,
@@ -1265,7 +1265,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "eb96499f-9ecb-50d7-b494-b90a0b6c37f6",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 4,
@@ -1278,7 +1278,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a8bf7c17-61a4-55b4-9ab9-5eb042beb4b2",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 1,
@@ -1291,7 +1291,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "f65a43d6-e601-5298-bbef-d4808654765d",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 2,
@@ -1304,7 +1304,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "2c3be488-c116-5a4d-a9f1-e22493a5ee47",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 3,
@@ -1317,7 +1317,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "072b87f1-6f9e-59d2-96e3-f078b891fc6d",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 4,
@@ -1330,7 +1330,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "3031a731-4943-54e0-80c5-b88178ee7894",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 9,
@@ -1343,7 +1343,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "38ee5182-06e7-5479-b329-0311d4ebbb9d",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 10,
@@ -1356,7 +1356,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "702eb332-0520-568d-ac27-44ce06b18bf7",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 11,
@@ -1369,7 +1369,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "faea6df9-d3d9-5571-88fa-083db0ebe8bb",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 12,
@@ -1382,7 +1382,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "12579b74-b92a-5a32-b640-94e5150c8730",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 13,
@@ -1395,7 +1395,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "2c6ecf14-b7c4-5785-9107-0dacb24dfa95",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 14,
@@ -1408,7 +1408,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "e90def36-a82d-5729-8d35-9661629015a3",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 15,
@@ -1421,7 +1421,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "8986971b-9e69-521f-afa9-6239a665ef4b",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 16,
@@ -1434,7 +1434,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "e1860acc-124e-5844-ab7f-096c63177d75",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 13,
@@ -1447,7 +1447,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a72f5b24-229b-5117-98b7-6f72c55e5b9f",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 14,
@@ -1460,7 +1460,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "2cb4520a-ce77-5162-8147-2221c175b95b",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 15,
@@ -1473,7 +1473,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "113d2ebe-e4a4-548a-a51f-dd7e9c9137e1",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 16,
@@ -1486,7 +1486,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "beb249b8-9010-5c75-aa65-9be6500d9b81",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 1,
@@ -1499,7 +1499,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "af46a37c-bc6e-5663-b409-b2d69a350ecc",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 9,
@@ -1512,7 +1512,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "34befe2d-e0a7-5b20-8800-f559f7a9bb50",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 10,
@@ -1525,7 +1525,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "eab835d9-ebc9-511b-8359-2747543f0b36",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 11,
@@ -1538,7 +1538,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "bcae231e-4d1c-5ad0-ba0a-b3afe6d90a7e",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 12,
@@ -1551,7 +1551,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "75078f6d-55fc-5491-9569-ebb350224f7d",
                         "context": "Main Character",
                         "appreciation": "Signpost",
                         "sequence": 1,
@@ -1564,7 +1564,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "1934676a-99df-5589-ac0c-2079cc44ec94",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": null,
@@ -1577,7 +1577,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "26207091-7ae2-52f4-9f55-041bbebe1bfa",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 2,
@@ -1590,7 +1590,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "d86b0d05-506a-5ff0-a725-e8dab9deb017",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 3,
@@ -1603,7 +1603,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "edc80af1-509c-581b-98aa-dc3fa1ef0370",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 4,
@@ -1616,7 +1616,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "d3318e45-78c7-5b56-80d9-665ffb14a696",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 1,
@@ -1629,7 +1629,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "918c43af-9533-5e36-92c4-46e74a5e6702",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 2,
@@ -1642,7 +1642,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "cbadc5e0-32b0-581f-a935-7f1dd81ad4d0",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 3,
@@ -1655,7 +1655,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "885c7fa6-ef15-56f3-a952-ba591a284b2e",
                         "context": "Main Character",
                         "appreciation": "Event",
                         "sequence": 4,
@@ -1668,7 +1668,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "85374d50-a9c7-5aed-a8cd-74e5f45f863b",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 5,
@@ -1681,7 +1681,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "0180b9d8-0ed8-5b67-b18a-924d68a7eee2",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 6,
@@ -1694,7 +1694,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "3dd8a8ac-dbcd-58c7-9ed3-c54ed6eed66c",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 7,
@@ -1707,7 +1707,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "467ba7bd-c8de-59e6-aecc-a2b15d51d09a",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 8,
@@ -1720,7 +1720,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "366e40ec-5866-5202-aa27-2459c0ec72b9",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 9,
@@ -1733,7 +1733,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "eac2a4c2-89e6-5332-8f52-2614c31dfc91",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 10,
@@ -1746,7 +1746,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "55a31ee4-3b32-54ae-8003-ce0fd0245347",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 11,
@@ -1759,7 +1759,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "23e7d836-0ca9-54bc-8e4c-2455c7dd393d",
                         "context": "Main Character",
                         "appreciation": "Progression",
                         "sequence": 12,
@@ -1772,7 +1772,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "c4fd1f90-cf94-50a2-80f6-f8f37b43f5a5",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 5,
@@ -1785,7 +1785,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "ec8d9123-47a0-59e6-a489-e1de89157dcc",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 6,
@@ -1798,7 +1798,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "3b90bab4-a3d5-5e09-9fa5-60c746f4f114",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 7,
@@ -1811,7 +1811,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a4b6d96c-3766-5e93-a885-82ca443de7f4",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 8,
@@ -1824,7 +1824,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "225c45c3-4c2c-5531-9682-3ca9c9cde4dd",
                         "context": "Objective Story",
                         "appreciation": "Signpost",
                         "sequence": 1,
@@ -1837,7 +1837,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "ac290b22-43ad-5af7-a7a1-e6f2e3fad194",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 5,
@@ -1850,7 +1850,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "c9e9374a-cd28-5514-80d7-56bcaef63aa2",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 6,
@@ -1863,7 +1863,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "4a49d8db-3a83-58d6-a470-a487b27a7786",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 7,
@@ -1876,7 +1876,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "a679e972-c6fb-5aee-a215-8c2a7bb35799",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 8,
@@ -1889,7 +1889,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "c947e7b4-4ffb-525c-a27f-9808e1e9bea2",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 13,
@@ -1902,7 +1902,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "377b159b-6e09-500a-b032-58b4d6bf42a5",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 14,
@@ -1915,7 +1915,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "6f50e864-374a-598f-a580-8b2ef3539b1a",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 15,
@@ -1928,7 +1928,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "185a3ffa-645b-52a2-addb-6404cc986950",
                         "context": "Objective Story",
                         "appreciation": "Progression",
                         "sequence": 16,
@@ -1941,7 +1941,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "2d95f67e-a0f9-5754-815a-d112ad6fe303",
                         "context": "Influence Character",
                         "appreciation": "Signpost",
                         "sequence": 3,
@@ -1954,7 +1954,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "15a229ea-d6bd-5d56-b8a4-4281432efcbe",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 9,
@@ -1967,7 +1967,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "e9030ae8-0167-5e04-9ed3-2d6c46bc169f",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 10,
@@ -1980,7 +1980,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "000bfc0a-4c88-56ef-a59c-2e891c289007",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 11,
@@ -1993,7 +1993,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "b5f54085-82e5-586a-9207-7107a8a47b73",
                         "context": "Influence Character",
                         "appreciation": "Progression",
                         "sequence": 12,
@@ -2006,7 +2006,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "2b202ba2-7055-56bc-bcba-ab50f0d4d82b",
                         "context": "Influence Character",
                         "appreciation": "Event",
                         "sequence": 33,
@@ -2019,7 +2019,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "61f370f7-50a4-5b74-9e78-1dd89055f677",
                         "context": "Influence Character",
                         "appreciation": "Event",
                         "sequence": 34,
@@ -2032,7 +2032,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "0af42e48-7742-57aa-8e83-735cbe5c9c78",
                         "context": "Influence Character",
                         "appreciation": "Event",
                         "sequence": 35,
@@ -2045,7 +2045,7 @@
                         }
                     },
                     {
-                        "id": "[[ internal id ]]",
+                        "id": "b96fe861-e03f-5197-8050-d4aaee20d505",
                         "context": "Influence Character",
                         "appreciation": "Event",
                         "sequence": 36,
