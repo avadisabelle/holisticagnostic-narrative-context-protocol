@@ -93,6 +93,11 @@ narrative-context-protocol/
 ├── app/                           # NCP Story Studio (React application)
 │   ├── src/                      # Application source code
 │   ├── public/                   # Static assets
+│   │   └── examples/             # Example NCP stories (served at /examples/)
+│   │       ├── anora.json
+│   │       ├── the-shawshank-redemption.json
+│   │       ├── weaver_of_words__the_catalyst_of_change_251101.json
+│   │       └── example-story.json
 │   ├── Dockerfile                # Multi-stage Docker build
 │   ├── nginx.conf                # Production web server config
 │   ├── DEVELOPMENT.md            # Development session logs
@@ -105,12 +110,6 @@ narrative-context-protocol/
 ├── schema/
 │   ├── ncp-schema.json
 │   └── ncp-schema.yaml
-│
-├── examples/                      # Example NCP stories
-│   ├── anora.json
-│   ├── the-shawshank-redemption.json
-│   ├── weaver_of_words__the_catalyst_of_change_251101.json
-│   └── example-story.json
 │
 ├── docs/
 │   ├── terminology/              # Narrative terminology definitions

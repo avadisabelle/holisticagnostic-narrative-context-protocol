@@ -37,6 +37,7 @@ narrative-context-protocol/
 │   │   ├── hooks/             # Custom React hooks
 │   │   └── styles/            # Global styles and themes
 │   ├── public/                # Static assets
+│   │   └── examples/          # Example story files (data source, served at /examples/)
 │   └── package.json
 │
 ├── rispecs/                     # RISE specifications (spec-to-code parity)
@@ -46,7 +47,6 @@ narrative-context-protocol/
 │   ├── api/                   # API specifications
 │   └── README.md             # How to use specs
 │
-├── examples/                   # Example story files (data source)
 ├── docs/                      # NCP documentation
 │   └── terminology/          # Terminology definitions
 │
@@ -91,7 +91,7 @@ Features:
 **Desired Outcome**: Consistent data operations across the application
 
 Operations:
-- Load stories from examples/
+- Load stories from app/public/examples/
 - Validate against schema
 - Transform between different view representations
 - Export in multiple formats

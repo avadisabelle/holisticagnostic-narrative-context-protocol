@@ -3,11 +3,11 @@ const fs = require('fs');
 const path = require('path');
 
 const ajv = new Ajv();
-const schemaPath = path.join(__dirname, '../schema/unm-schema.json');
+const schemaPath = path.join(__dirname, '../schema/ncp-schema.json');
 const schema = JSON.parse(fs.readFileSync(schemaPath, 'utf8'));
 
 // Load the example narrative file
-const dataPath = path.join(__dirname, '../examples/example-story.json');
+const dataPath = path.join(__dirname, '../app/public/examples/example-story.json');
 const narrativeData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 const validate = ajv.compile(schema);

@@ -45,7 +45,7 @@ export function StoriesList() {
         <div className="bg-gray-50 border border-gray-200 rounded-lg p-12 text-center">
           <Book className="w-16 h-16 text-gray-400 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-gray-700 mb-2">No Stories Found</h2>
-          <p className="text-gray-600">Check that example story files exist in the examples/ directory.</p>
+          <p className="text-gray-600">Check that example story files exist in the app/public/examples/ directory.</p>
         </div>
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
