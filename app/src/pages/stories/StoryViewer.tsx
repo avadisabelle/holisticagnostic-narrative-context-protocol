@@ -47,7 +47,22 @@ export function StoryViewer() {
     );
   }
 
-  const narrative: Narrative = currentStory.narratives[0]; // Use first narrative for now
+  const narrative: Narrative | undefined = currentStory.narratives?.[0]; // Use first narrative for now
+
+  if (!narrative) {
+    return (
+      <div className="max-w-4xl mx-auto">
+        <Link to="/stories" className="inline-flex items-center text-blue-600 hover:underline mb-6">
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to stories
+        </Link>
+        <ErrorMessage
+          title="Story Not Found"
+          message="This story does not contain a readable narrative."
+        />
+      </div>
+    );
+  }
 
   // Build quick jump sections
   const quickJumpSections = [
