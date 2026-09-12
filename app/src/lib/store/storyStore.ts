@@ -21,7 +21,7 @@ interface StoryStore {
   searchStories: (query: string) => Promise<void>;
 }
 
-export const useStoryStore = create<StoryStore>((set, get) => ({
+export const useStoryStore = create<StoryStore>((set) => ({
   // Initial state
   stories: [],
   currentStory: null,

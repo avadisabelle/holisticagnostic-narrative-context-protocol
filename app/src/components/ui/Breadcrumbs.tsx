@@ -20,7 +20,7 @@ export function Breadcrumbs() {
 
   // Build subsequent breadcrumbs
   let currentPath = '';
-  pathnames.forEach((segment, index) => {
+  pathnames.forEach((segment) => {
     currentPath += `/${segment}`;
 
     // Format the label

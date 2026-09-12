@@ -508,7 +508,7 @@ export function StoryViewer() {
               {narrative.subtext?.storybeats && narrative.subtext.storybeats.length > 0 && (
                 <div className="flex items-center gap-4">
                   <span className="text-sm text-gray-600">
-                    {narrative.subtext.storybeats.length} total beats
+                    {narrative.subtext?.storybeats?.length ?? 0} total beats
                   </span>
                   <div className="relative">
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -532,7 +532,7 @@ export function StoryViewer() {
                         beat.emotional_weight?.toLowerCase().includes(searchQuery.toLowerCase())
                       : true
                   )
-                  .map((beat, index, filteredBeats) => (
+                  .map((beat) => (
                     <div
                       key={beat.id}
                       className="relative border-l-4 border-blue-400 pl-6 py-3 hover:bg-blue-50 transition-colors rounded-r-lg group"
@@ -546,7 +546,7 @@ export function StoryViewer() {
                             Beat #{beat.sequence}
                           </span>
                           <span className="text-xs text-gray-500">
-                            {Math.round((beat.sequence / narrative.subtext.storybeats.length) * 100)}% through story
+                            {Math.round((beat.sequence / (narrative.subtext?.storybeats?.length ?? 1)) * 100)}% through story
                           </span>
                         </div>
                       </div>
@@ -699,7 +699,7 @@ export function StoryViewer() {
             <h2 className="text-2xl font-bold mb-6">Storytelling Moments</h2>
             {narrative.storytelling?.moments && narrative.storytelling.moments.length > 0 ? (
               <div className="space-y-6">
-                {narrative.storytelling.moments.map((moment, index) => (
+                {narrative.storytelling.moments.map((moment) => (
                   <div
                     key={moment.id}
                     className="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 border border-purple-200 rounded-xl p-6 shadow-md"
