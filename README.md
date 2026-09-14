@@ -74,6 +74,13 @@ See [DOCKER-QUICKSTART.md](./DOCKER-QUICKSTART.md) for more options.
 
 Read the complete [Specification](/SPECIFICATION.md) to understand the schema in depth
 
+## Built on NCP
+
+NCP is meant to travel. These are the places it has already gone:
+
+- **[`@miadi/ncp-story-studio`](https://www.npmjs.com/package/@miadi/ncp-story-studio)** ([source](https://github.com/jgwill/Miadi/tree/main/packages/ncp-story-studio)) — the Story Studio, released as modules you can take into your own app: canonical NCP types with a zero-dependency validator, a headless story-lattice layout with a React renderer, and storage for story projects.
+- **[`@miadi/ava8`](https://www.npmjs.com/package/@miadi/ava8)** ([source](https://github.com/jgwill/Miadi/tree/main/packages/ava8)) — the Ava8 symphony, where NCP is heading next so that a storyform can carry into music and sound.
+
 ## Repository Structure
 ```
 narrative-context-protocol/
